@@ -1,2 +1,11 @@
-# Shared Datasets {#sharedDatasets}
-'`
+# Shared Data {#sharedData}
+
+## Datasets
+Single-cell RNA-seq datasets that are commonly used by the lab are on the server home under `shared/datasets`. Each dataset is a separate .txt file and the files are categorised into subfolders by cancer type (or "Normal").
+
+For more information on the datasets found here, go to `shared/datasets/INFO`.If you would like to add a dataset, please also add the relevant metadata to the excel spreadsheet in the `shared/datasets/INFO` directory.
+
+## Gene signatures
+Gene signatures derived from scRNA-seq datasets are also on the server home. You can find these under `shared/datasets/SIGNATURES`. The signatures are collapsed into a single .txt file in two different formats, "long" and "wide". The former includes metadata, while the latter contains the minimal amount of information - one signature per column of the matrix.
+
+For more information on the gene signatures as well as how to add signatures, please see `shared/datasets/SIGNATURES/README`.
