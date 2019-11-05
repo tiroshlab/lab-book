@@ -22,8 +22,8 @@ Some data are used by several labs at Weizmann and as such WEXAC have put a sign
 Our server or ‘compute node’ is called `cn077`. It has ~200GB RAM and 1 core (Nov ‘19). `cn077` can be accessed directly or via one of four ‘access nodes’ (`access1`, `access2`, `access3`, `access4`) whose job it is to properly manage and distribute memory between lab members. For this reason, **if you’re working interactively on the server you should primarily use one of the access nodes**. It shouldn’t matter which of the four you use.
 
 **Access**  
-access node: `ssh <username>@cn077.wexac.weizmann.ac.il`  
-compute node: `ssh <username>@access4.wexac.weizmann.ac.il`  
+access node: `ssh <username>@access4.wexac.weizmann.ac.il`  
+compute node: `ssh <username>@cn077.wexac.weizmann.ac.il`  
 
 ## Submitting jobs
 If you are running something that requires substantial memory/time, you should submit this as a job to one of the queues on WEXAC (or sit back and wait to receive a call from HPC).
