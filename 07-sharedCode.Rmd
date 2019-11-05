@@ -3,65 +3,48 @@
 The aim of the shared code is to implement the lab’s core ideas on analysis of scRNA-seq data. The code is written in R and is publicly available via GitHub (see below). It was designed with a modular approach and hence is separated into several well-defined packages. The packages and functions are well documented and examples are provided within each package.
 
 ## About the R packages
-### scandal
+### `scandal`
+[Source code](https://github.com/dravishays/scandal) | [Report bugs](https://github.com/dravishays/scandal/issues)
 
-A framework that enables defining a single-cell experiment. Provides methods for loading the data, preprocessing and quality control, maintaining the data with a low memory footprint (using sparse matrices), various plotting methods, linking meta-data with expression data and more. 
+_**A framework that enables defining a single-cell experiment.**_
 
-**Installation (in R)**  
+The package provides methods for loading the data, preprocessing and quality control, maintaining the data with a low memory footprint (using sparse matrices), various plotting methods, linking meta-data with expression data and more. 
+
+The package extends the `SingleCellExperiment` class, adapting it for use in our lab. See [this tutorial](https://www.bioconductor.org/packages/release/bioc/vignettes/SingleCellExperiment/inst/doc/intro.html) for an introduction to the `SingleCellExperiment` class.
+
+To install in R:  
 ```{r, eval=FALSE}
 devtools::install_github("dravishays/scandal")
 ```
 
-**Github Links**  
-- [Browse the source code](www.github.com/dravishays/scandal)
-- [Report any bugs](https://github.com/dravishays/scandal/issues)
+### `infercna`
+[Website & Tutorials](https://jlaffy.github.io/infercna) | [Functions index](https://jlaffy.github.io/infercna/reference/index.html) | [Source code](https://github.com/jlaffy/infercna) | [Report bugs](https://github.com/jlaffy/infercna/issues)
 
-**References**  
-The package extends the `SingleCellExperiment` class, adapting it for use in our lab. See this tutorial for an introduction to the `SingleCellExperiment` class.
+_**Infer copy-number alterations from (single-cell) RNA-sequencing data.**_
 
+The methodology implemented here was first formulated by Itay and colleagues during his postdoc [Tirosh et al., 2014](https://science.sciencemag.org/content/344/6190/1396.long) and has been tried and tested in several publications since ([Filbin et al., 2018](https://science.sciencemag.org/content/360/6386/331.long); [Neftel et al., 2019](https://www.ncbi.nlm.nih.gov/pubmed/31327527); [Puram et al., 2017](https://www.ncbi.nlm.nih.gov/pubmed/29198524); Tirosh et al., [2016a](https://science.sciencemag.org/content/352/6282/189.long), [2016b](https://www.nature.com/articles/nature20123); [Venteicher et al., 2017](https://science.sciencemag.org/content/355/6332/eaai8478.long)).
 
-### infercna
-
-Infer copy-number alterations from (single-cell) RNA-sequencing data. 
-
-**Installation (in R)**  
+To install in R:  
 ```{r, eval=FALSE}
 devtools::install_github("jlaffy/infercna")
 ```
 
-**Package Website & Tutorials**
-- [Website homepage](https://jlaffy.github.io/infercna)
-- [Tutorial 1: Set your genome]()
-- [Tutorial 2: Example with a scRNA-seq dataset]()  
+[Tutorial 1: Set your genome](https://jlaffy.github.io/infercna/articles/useGenome.html)  
+[Tutorial 2: Example with a scRNA-seq dataset](https://jlaffy.github.io/infercna/articles/infercna_tutorial.html)  
 
-**Github Links**  
-- [Browse the source code](www.github.com/jlaffy/infercna)
-- [Report any bugs](https://github.com/jlaffy/infercna/issues)
+### `scrabble`
+[Website & Tutorials](https://jlaffy.github.io/scrabble) | [Functions index](https://jlaffy.github.io/scrabble/reference/index.html) | [Source code](https://github.com/jlaffy/scrabble) | [Report bugs](https://github.com/jlaffy/scrabble/issues)
 
-**References**  
-The methodology implemented here was first formulated by Itay with colleagues during his postdoc (Tirosh et al., 2014) and has been tried and tested in several publications since (Filbin et al., 2018; Neftel et al., 2019; Puram et al., 2017; Tirosh et al., 2016a, 2016b; Venteicher et al., 2017).
+_**Perform exploratory computational analyses on processed scRNAseq gene expression data.**_
 
-### scrabble
+The package focuses on unbiased methods in unsupervised clustering and dimensionality reduction to identify and characterize the transcriptionally-distinct subpopulations of cancer cells residing within tumours.
 
-Perform exploratory computational analyses on processed scRNAseq gene expression data. The package focuses on unbiased methods in unsupervised clustering and dimensionality reduction to identify and characterize the transcriptionally-distinct subpopulations of cancer cells residing within tumours.
+In its current implementation scrabble most closely reflects the methods implemented in [Neftel et al., 2019](https://www.ncbi.nlm.nih.gov/pubmed/31327527) though any of the lab’s papers should be useful as reference.
 
-**Installation (in R)**  
+To install in R:  
 ```{r, eval=FALSE}
 devtools::install_github("jlaffy/scrabble")
 ```
 
-**Package Website & Tutorials**
-- [Website homepage](https://jlaffy.github.io/scrabble)
-
-**Github Links**  
-- [Browse the source code](www.github.com/jlaffy/scrabble)
-- [Report any bugs](https://github.com/jlaffy/scrabble/issues)
-
-**References**  
-In its current implementation scrabble most closely reflects the methods implemented in [Neftel et al., 2019](www.google.com) though any of the lab’s papers should be useful as reference.
-
 ## Contributing 
 Members of the lab to whom the shared code is relevant and of use are encouraged to contribute to it. This will both help the code to grow and develop but also allow you to fine-tune it for your own analyses. To make individual contributions, you can fork the project from GitHub. To contribute in a more long-term way, ask Julie or Avishay to add you as an official contributor to the GitHub package(s) in question.
-
-
-

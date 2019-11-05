@@ -158,9 +158,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7" data-path="sharedDatasets.html"><a href="sharedDatasets.html"><i class="fa fa-check"></i><b>7</b> Shared Datasets</a></li>
 <li class="chapter" data-level="8" data-path="sharedCode.html"><a href="sharedCode.html"><i class="fa fa-check"></i><b>8</b> Shared Code</a><ul>
 <li class="chapter" data-level="8.1" data-path="sharedCode.html"><a href="sharedCode.html#about-the-r-packages"><i class="fa fa-check"></i><b>8.1</b> About the R packages</a><ul>
-<li class="chapter" data-level="8.1.1" data-path="sharedCode.html"><a href="sharedCode.html#scandal"><i class="fa fa-check"></i><b>8.1.1</b> scandal</a></li>
-<li class="chapter" data-level="8.1.2" data-path="sharedCode.html"><a href="sharedCode.html#infercna"><i class="fa fa-check"></i><b>8.1.2</b> infercna</a></li>
-<li class="chapter" data-level="8.1.3" data-path="sharedCode.html"><a href="sharedCode.html#scrabble"><i class="fa fa-check"></i><b>8.1.3</b> scrabble</a></li>
+<li class="chapter" data-level="8.1.1" data-path="sharedCode.html"><a href="sharedCode.html#scandal"><i class="fa fa-check"></i><b>8.1.1</b> <code>scandal</code></a></li>
+<li class="chapter" data-level="8.1.2" data-path="sharedCode.html"><a href="sharedCode.html#infercna"><i class="fa fa-check"></i><b>8.1.2</b> <code>infercna</code></a></li>
+<li class="chapter" data-level="8.1.3" data-path="sharedCode.html"><a href="sharedCode.html#scrabble"><i class="fa fa-check"></i><b>8.1.3</b> <code>scrabble</code></a></li>
 </ul></li>
 <li class="chapter" data-level="8.2" data-path="sharedCode.html"><a href="sharedCode.html#contributing"><i class="fa fa-check"></i><b>8.2</b> Contributing</a></li>
 </ul></li>
@@ -235,43 +235,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="about-the-r-packages" class="section level2">
 <h2><span class="header-section-number">8.1</span> About the R packages</h2>
 <div id="scandal" class="section level3">
-<h3><span class="header-section-number">8.1.1</span> scandal</h3>
-<p>A framework that enables defining a single-cell experiment. Provides methods for loading the data, preprocessing and quality control, maintaining the data with a low memory footprint (using sparse matrices), various plotting methods, linking meta-data with expression data and more.</p>
-<p><strong>Installation (in R)</strong></p>
+<h3><span class="header-section-number">8.1.1</span> <code>scandal</code></h3>
+<p><a href="https://github.com/dravishays/scandal">Source code</a> | <a href="https://github.com/dravishays/scandal/issues">Report bugs</a></p>
+<p><em><strong>A framework that enables defining a single-cell experiment.</strong></em></p>
+<p>The package provides methods for loading the data, preprocessing and quality control, maintaining the data with a low memory footprint (using sparse matrices), various plotting methods, linking meta-data with expression data and more.</p>
+<p>The package extends the <code>SingleCellExperiment</code> class, adapting it for use in our lab. See <a href="https://www.bioconductor.org/packages/release/bioc/vignettes/SingleCellExperiment/inst/doc/intro.html">this tutorial</a> for an introduction to the <code>SingleCellExperiment</code> class.</p>
+<p>To install in R:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;dravishays/scandal&quot;</span>)</a></code></pre></div>
-<p><strong>Github Links</strong><br />
-- <a href="www.github.com/dravishays/scandal">Browse the source code</a>
-- <a href="https://github.com/dravishays/scandal/issues">Report any bugs</a></p>
-<p><strong>References</strong><br />
-The package extends the <code>SingleCellExperiment</code> class, adapting it for use in our lab. See this tutorial for an introduction to the <code>SingleCellExperiment</code> class.</p>
 </div>
 <div id="infercna" class="section level3">
-<h3><span class="header-section-number">8.1.2</span> infercna</h3>
-<p>Infer copy-number alterations from (single-cell) RNA-sequencing data.</p>
-<p><strong>Installation (in R)</strong></p>
+<h3><span class="header-section-number">8.1.2</span> <code>infercna</code></h3>
+<p><a href="https://jlaffy.github.io/infercna">Website &amp; Tutorials</a> | <a href="https://jlaffy.github.io/infercna/reference/index.html">Functions index</a> | <a href="https://github.com/jlaffy/infercna">Source code</a> | <a href="https://github.com/jlaffy/infercna/issues">Report bugs</a></p>
+<p><em><strong>Infer copy-number alterations from (single-cell) RNA-sequencing data.</strong></em></p>
+<p>The methodology implemented here was first formulated by Itay and colleagues during his postdoc <a href="https://science.sciencemag.org/content/344/6190/1396.long">Tirosh et al., 2014</a> and has been tried and tested in several publications since (<a href="https://science.sciencemag.org/content/360/6386/331.long">Filbin et al., 2018</a>; <a href="https://www.ncbi.nlm.nih.gov/pubmed/31327527">Neftel et al., 2019</a>; <a href="https://www.ncbi.nlm.nih.gov/pubmed/29198524">Puram et al., 2017</a>; Tirosh et al., <a href="https://science.sciencemag.org/content/352/6282/189.long">2016a</a>, <a href="https://www.nature.com/articles/nature20123">2016b</a>; <a href="https://science.sciencemag.org/content/355/6332/eaai8478.long">Venteicher et al., 2017</a>).</p>
+<p>To install in R:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;jlaffy/infercna&quot;</span>)</a></code></pre></div>
-<p><strong>Package Website &amp; Tutorials</strong>
-- <a href="https://jlaffy.github.io/infercna">Website homepage</a>
-- <a href="">Tutorial 1: Set your genome</a>
-- <a href="">Tutorial 2: Example with a scRNA-seq dataset</a></p>
-<p><strong>Github Links</strong><br />
-- <a href="www.github.com/jlaffy/infercna">Browse the source code</a>
-- <a href="https://github.com/jlaffy/infercna/issues">Report any bugs</a></p>
-<p><strong>References</strong><br />
-The methodology implemented here was first formulated by Itay with colleagues during his postdoc (Tirosh et al., 2014) and has been tried and tested in several publications since (Filbin et al., 2018; Neftel et al., 2019; Puram et al., 2017; Tirosh et al., 2016a, 2016b; Venteicher et al., 2017).</p>
+<p><a href="https://jlaffy.github.io/infercna/articles/useGenome.html">Tutorial 1: Set your genome</a><br />
+<a href="https://jlaffy.github.io/infercna/articles/infercna_tutorial.html">Tutorial 2: Example with a scRNA-seq dataset</a></p>
 </div>
 <div id="scrabble" class="section level3">
-<h3><span class="header-section-number">8.1.3</span> scrabble</h3>
-<p>Perform exploratory computational analyses on processed scRNAseq gene expression data. The package focuses on unbiased methods in unsupervised clustering and dimensionality reduction to identify and characterize the transcriptionally-distinct subpopulations of cancer cells residing within tumours.</p>
-<p><strong>Installation (in R)</strong></p>
+<h3><span class="header-section-number">8.1.3</span> <code>scrabble</code></h3>
+<p><a href="https://jlaffy.github.io/scrabble">Website &amp; Tutorials</a> | <a href="https://jlaffy.github.io/scrabble/reference/index.html">Functions index</a> | <a href="https://github.com/jlaffy/scrabble">Source code</a> | <a href="https://github.com/jlaffy/scrabble/issues">Report bugs</a></p>
+<p><em><strong>Perform exploratory computational analyses on processed scRNAseq gene expression data.</strong></em></p>
+<p>The package focuses on unbiased methods in unsupervised clustering and dimensionality reduction to identify and characterize the transcriptionally-distinct subpopulations of cancer cells residing within tumours.</p>
+<p>In its current implementation scrabble most closely reflects the methods implemented in <a href="https://www.ncbi.nlm.nih.gov/pubmed/31327527">Neftel et al., 2019</a> though any of the lab’s papers should be useful as reference.</p>
+<p>To install in R:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;jlaffy/scrabble&quot;</span>)</a></code></pre></div>
-<p><strong>Package Website &amp; Tutorials</strong>
-- <a href="https://jlaffy.github.io/scrabble">Website homepage</a></p>
-<p><strong>Github Links</strong><br />
-- <a href="www.github.com/jlaffy/scrabble">Browse the source code</a>
-- <a href="https://github.com/jlaffy/scrabble/issues">Report any bugs</a></p>
-<p><strong>References</strong><br />
-In its current implementation scrabble most closely reflects the methods implemented in <a href="www.google.com">Neftel et al., 2019</a> though any of the lab’s papers should be useful as reference.</p>
 </div>
 </div>
 <div id="contributing" class="section level2">
