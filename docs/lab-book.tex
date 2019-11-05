@@ -1,0 +1,1187 @@
+\documentclass[]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Tirosh Lab Book},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Tirosh Lab Book}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{}
+    \preauthor{}\postauthor{}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{2019-11-05}
+
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\chapter{Homepage}\label{homepage}
+
+\section{Links}\label{links}
+
+YOOOOO \#\#\# Useful -
+\href{https://www.dropbox.com/home/Tirosh\%20Lab}{Dropbox home}\\
+- \href{http://www.weizmann.ac.il/mcb/tirosh/publications-0}{Lab
+publications}\\
+- \href{http://www.weizmann.ac.il/mcb/tirosh/}{Lab website}\\
+-
+\href{https://www.dropbox.com/sh/javjoi26i5k5f6t/AADAX4RgSZUFuBwtS6TRE3wua?dl=0}{Experimental
+protocols}
+
+\subsection{Fun}\label{fun}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://twitter.com/tiroshlab?lang=bg}{Lab Twitter}\\
+\item
+  \href{https://www.dropbox.com/s/zwss5fg9rkoz7pp/lab\%20bday\%20list.xlsx?dl=0}{Birthdays}\\
+\item
+  \href{http://www.weizmann.ac.il/mcb/tirosh/group-members}{Lab
+  members}\\
+\item
+  \href{http://www.weizmann.ac.il/mcb/tirosh/pictures}{Lab trip photos}
+\end{itemize}
+
+\section{Adding to the book}\label{adding-to-the-book}
+
+Adding to the lab book is easy.
+
+\subsection{Option 1:
+non-computational}\label{option-1-non-computational}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Go to the website chapter that you would like to edit.
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  E.g. \href{https://jlaffy.github.io/lab-book/contact.html}{Chapter 3
+  Lab members and contact details}
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Click on the edit icon at the top of the website page.
+\item
+  Make your edits and submit them (green button at the bottom of the
+  page).
+\item
+  If you do not have a Github account, wait a short while for your edit
+  to be accepted. :)
+\end{enumerate}
+
+\subsection{Option 2: computational}\label{option-2-computational}
+
+\textbf{Note}: this will only work for those whose Github users have
+been added to the book repository.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Go to your local clone of the repository.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    to clone the repository:
+    \texttt{git\ clone\ https://github.com/jlaffy/lab-book.git}\\
+  \end{itemize}
+\item
+  Make and save the relevant changes to the .Rmd file in question.
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  There is one .Rmd file per chapter.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Submit the edit. In the terminal type:
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{git\ commit\ -am\ \textless{}myShortMessage\textgreater{}}
+\item
+  \texttt{git\ pull\ origin\ master}
+\item
+  \texttt{git\ push\ origin\ master}
+\end{itemize}
+
+\section{Book formats}\label{book-formats}
+
+The default book is a \href{https://jlaffy.github.io/lab-book}{website}.
+You can also choose to download the book as PDF or ebook. To do this,
+click the download icon at the top of the website page.
+
+\chapter{General research directions of the lab}\label{general}
+
+We are a cancer systems biology lab, focused on intra-tumor
+heterogeneity (ITH). Our main goal is to understand ITH, the mechanisms
+that generate and maintain it, and the functional and clinical
+implications.
+
+\section{ITH mechanisms}\label{ith-mechanisms}
+
+We consider three main types of mechanisms: 1. Genetic heterogeneity
+(genetic subclones). 2. Microenvironmental influences
+(e.g.~oxygen/nutrient availability and cell-cell interactions) 3.
+Intrinsic cellular plasticity (cells dynamically transitioning between
+states).
+
+\section{ITH functional/clinical
+implications}\label{ith-functionalclinical-implications}
+
+We are interested in all implications of ITH but focus primarily on the
+questions of drug resistance, cancer stem cells and metastasis/invasion,
+all of which have highly significant clinical implications.
+
+\section{Approach}\label{approach}
+
+We use a systems biology approach, which means that we combine
+experimental and computational approaches to address these questions
+from a global perspective, typically through single cell RNA-seq or
+other high-throughput profiling approaches, followed by extensive
+computational analyses, and experimental validations.
+
+\section{Experimentally}\label{experimentally}
+
+We emphasize the ability to work directly with patient samples and to
+that end we work closely with clinicians. In addition, we work with
+``simple'' model systems (cancer cell lines), but only after we verify
+that they recapitulate certain aspects of heterogeneity as seen in
+tumors. We tend to avoid working with complex models and with
+experimental systems that are difficult and slow to work with, such as
+mice models, although this is possible through collaborations with other
+labs. Our main experimental method is scRNA-seq, but we try to combine
+it and follow up with complementary approaches (FACS analysis, spatial
+analyses, time-course experiments, ATAC-seq) which will expand and
+evolve with time.
+
+\section{Computationally}\label{computationally}
+
+We emphasize a biology-centered and data-driven approach, and hence
+perform hands-on extensive, iterative, and integrative data analyses
+while avoiding the ``blind'' use of computational tool. We do not focus
+on any particular computational methodology but attempt to use the
+appropriate method for each analysis, while keeping the analysis
+intuitive and simple.
+
+\section{Biological contexts}\label{biological-contexts}
+
+We study primarily glioma and head and neck cancer. These are long-term
+directions in which we collaborate closely with experimental/clinical
+groups (Mario Suva from Boston and Sid Puram from St.~Louis), striving
+to deeply understand the underlying biology and ultimately make a
+clinical impact. We are currently starting also a third focus on
+neuroendocrine tumors (NETs), in collaboration with Amit Tirosh from
+Sheba Medical Center (no family relations). In addition, specific
+projects involve other contexts due to either exceptional diversity
+(e.g.~Carcinosarcomas: tumors that contain both carcinoma and sarcoma
+cells), or collaborative efforts (e.g.~in ovarian and pancreatic
+cancer).
+
+\chapter{Lab members and contact details}\label{contact}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Itay Tirosh,
+  \href{mailto:tirosh.itay@gmail}{\nolinkurl{tirosh.itay@gmail}},
+  054-9453547, Hanasi Harishon 54 apt. 20, Rehovot
+\item
+  Alissa Greenwald,
+  \href{mailto:aliscohen@gmail.com}{\nolinkurl{aliscohen@gmail.com}},
+  054-5761984, Uri Zvi Grinberg 1A, Rehovot
+\item
+  Rony Chanoch,
+  \href{mailto:ronychanoch@gmail.com}{\nolinkurl{ronychanoch@gmail.com}},
+  050-5982514, Moshe Sharet 3 apt 11, Tel Aviv
+\item
+  Mike Tyler,
+  \href{mailto:m20tyler@gmail.com}{\nolinkurl{m20tyler@gmail.com}},
+  058-6594177, Derekh Yavne 81 apt. 25, Rehovot
+\item
+  Avishay Spitzer,
+  \href{mailto:dr.avishayspitzer@gmail.com}{\nolinkurl{dr.avishayspitzer@gmail.com}},
+  052-8365141, Hameri 18, apt. 3, Givatayim
+\item
+  Michael Mints,
+  \href{mailto:michael.mints@umu.se}{\nolinkurl{michael.mints@umu.se}},
+  058-5734784, Sharabi 2, Tel Aviv
+\item
+  Julie Laffy,
+  \href{mailto:jlaffy7@gmail.com}{\nolinkurl{jlaffy7@gmail.com}},
+  058-7075989, Dizengoff 149 apt. 3, Tel Aviv
+\item
+  Noam Hadary,
+  \href{mailto:noam.hadary@weizmann.ac.il}{\nolinkurl{noam.hadary@weizmann.ac.il}},
+  052-4323212, Derech Yavne 63, apt. 14, Rehovot
+\end{enumerate}
+
+\chapter{Specific Projects}\label{projects}
+
+\textbf{Alissa}\\
+My two main projects are 1) Modeling ITH in cancer cell lines with a
+focus on dynamics, differential drug sensitivity, and cancer cell-cancer
+cell interactions in HNSCC (with Rotem). 2) Spatial transcriptomics of
+GBM (in collaboration with the Suva Lab).
+
+\textbf{Rony}\\
+My thesis focuses on GBM intra-tumor heterogeneity, for which I have 3
+projects in collaboration with Mario Suva's lab at MGH: 1) modeling the
+GBM states in cancer cell lines and a mouse model of GBM, 2) exploring
+the GBM microenvironment cell-cell interactions in regards to the
+cellular states, and 3) targeting the GBM states as a therapeutic
+approach for GBM.
+
+\textbf{Mike}\\
+My work concerns deconvolution of bulk RNA-seq data to identify
+signatures of tumour subpopulations or cell states. My current project
+focuses on distinguishing EMT (or partial EMT) from stromal cells in
+bulk transcriptomes.
+
+\textbf{Michael}\\
+My work broadly focuses on ITH in head and neck cancer. In collaboration
+with Sid Puram's lab I analyse scRNASeq data from patients with
+oropharyngeal, laryngeal and oral cavity cancer in order to find tumour
+genetic subclones and functional metaprograms in the cancer cells and
+microenvironment.
+
+\textbf{Noam H}\\
+My work is to do a regulatory follow up to lab discoveries on chromatin
+organization level using single cell ATAC-seq on two main ITH projects:
+1) head and neck cancer 2) GBM.
+
+\textbf{Julie}\\
+My work focuses on understanding expression heterogeneity in gliomas. I
+analyse primarily scRNA-seq data from the Suva lab to 1) define the
+subpopulations of cancer cells that exist in different glioma types, 2)
+understand the emergence of these subpopulations as a function of cell
+lineage, genetics and the TME and 3) revisit the distinctions between
+glioma types.
+
+\chapter{Joining and Leaving protocol}\label{joiningLeaving}
+
+\section{Joining}\label{joining}
+
+When joining the group:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Ask Michal Ovadia to pool your userID to this department and connect
+  you to any services you may need to use (at least WEXAC and email will
+  be necessary, and RSA very useful), note, if you have userID in other
+  department, pooling you will erase your old server folder.
+\item
+  Ask Michal to add you to the lab dropbox.
+\item
+  Order a computer -- available options are found at the
+  \href{http://www.weizmann.ac.il/DIS/computing-hardware/pc/windows-laptops}{DIS
+  site} Check with Itay before ordering.
+\item
+  Natali Yikne is the one that supplies network cable, opens the network
+  connection point near to your desk and makes your registration to the
+  internet - for that, you will have to supply your ETHERNET code (found
+  on the Ethernet outlet) and the computer's MAC address.
+\item
+  Ask Itay to get the lab google calendar so you can update and know
+  future plans.
+\item
+  If you're a foreigner, go to the FGS for help to set up banking and
+  insurance.
+\item
+  Also as a foreigner you can
+  \href{http://www.weizmann.ac.il/vs/}{arrange housing through the
+  visiting scientist centre}.
+\item
+  Provide your bank account to Michal so you can get paid.
+\item
+  After registering you will get emails about doing a medical checkup,
+  lab safety introduction and having your photo taken so you can get a
+  Weizmann badge.
+\end{enumerate}
+
+\section{Leaving}\label{leaving}
+
+When leaving the group:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Make sure to return all your computer accessories (docking station,
+  charger, mouse, keyboard etc)
+\item
+  Make sure to back up your code, results and data, as your folder will
+  be erased.
+\item
+  Talk to Michal to remove you from services.
+\item
+  Return your badge to Michal when you leave.
+\item
+  Notify Natali whether you possess Weizmann laptop and accessories and
+  who will get that after you.
+\end{enumerate}
+
+\chapter{Lab Responsibilities}\label{labResponsibilities}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Ordering (scientific, food)
+\item
+  Group meetings and journal club organization.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Julie
+  \item
+    Mike
+  \end{itemize}
+\item
+  Lab trip and lab week organization
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Rony
+  \end{itemize}
+\item
+  Equipment/reagents maintenance
+\item
+  Lab code
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Julie
+  \item
+    Avishay
+  \end{itemize}
+\item
+  Lab organization/setup (esp. including when moving to the new
+  building)
+\item
+  Anything else I didn't consider
+\end{enumerate}
+
+\chapter{Shared Data}\label{sharedData}
+
+\section{Datasets}\label{datasets}
+
+Single-cell RNA-seq datasets that are commonly used by the lab are on
+the server home under \texttt{shared/datasets}. Each dataset is a
+separate .txt file and the files are categorised into subfolders by
+cancer type (or ``Normal'').
+
+For more information on the datasets found here, go to
+\texttt{shared/datasets/INFO}.If you would like to add a dataset, please
+also add the relevant metadata to the excel spreadsheet in the
+\texttt{shared/datasets/INFO} directory.
+
+\section{Gene signatures}\label{gene-signatures}
+
+Gene signatures derived from scRNA-seq datasets are also on the server
+home. You can find these under \texttt{shared/datasets/SIGNATURES}. The
+signatures are collapsed into a single .txt file in two different
+formats, ``long'' and ``wide''. The former includes metadata, while the
+latter contains the minimal amount of information - one signature per
+column of the matrix.
+
+For more information on the gene signatures as well as how to add
+signatures, please see \texttt{shared/datasets/SIGNATURES/README}.
+
+\chapter{Shared Code}\label{sharedCode}
+
+The aim of the shared code is to implement the lab's core ideas on
+analysis of scRNA-seq data. The code is written in R and is publicly
+available via GitHub (see below). It was designed with a modular
+approach and hence is separated into several well-defined packages. The
+packages and functions are well documented and examples are provided
+within each package.
+
+\section{About the R packages}\label{about-the-r-packages}
+
+\subsection{\texorpdfstring{\texttt{scandal}}{scandal}}\label{scandal}
+
+\href{https://github.com/dravishays/scandal}{Source code} \textbar{}
+\href{https://github.com/dravishays/scandal/issues}{Report bugs}
+
+\emph{\textbf{A framework that enables defining a single-cell
+experiment.}}
+
+The package provides methods for loading the data, preprocessing and
+quality control, maintaining the data with a low memory footprint (using
+sparse matrices), various plotting methods, linking meta-data with
+expression data and more.
+
+The package extends the \texttt{SingleCellExperiment} class, adapting it
+for use in our lab. See
+\href{https://www.bioconductor.org/packages/release/bioc/vignettes/SingleCellExperiment/inst/doc/intro.html}{this
+tutorial} for an introduction to the \texttt{SingleCellExperiment}
+class.
+
+To install in R:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{devtools}\OperatorTok{::}\KeywordTok{install_github}\NormalTok{(}\StringTok{"dravishays/scandal"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{\texorpdfstring{\texttt{infercna}}{infercna}}\label{infercna}
+
+\href{https://jlaffy.github.io/infercna}{Website \& Tutorials}
+\textbar{}
+\href{https://jlaffy.github.io/infercna/reference/index.html}{Functions
+index} \textbar{} \href{https://github.com/jlaffy/infercna}{Source code}
+\textbar{} \href{https://github.com/jlaffy/infercna/issues}{Report bugs}
+
+\emph{\textbf{Infer copy-number alterations from (single-cell)
+RNA-sequencing data.}}
+
+The methodology implemented here was first formulated by Itay and
+colleagues during his postdoc
+\href{https://science.sciencemag.org/content/344/6190/1396.long}{Tirosh
+et al., 2014} and has been tried and tested in several publications
+since
+(\href{https://science.sciencemag.org/content/360/6386/331.long}{Filbin
+et al., 2018};
+\href{https://www.ncbi.nlm.nih.gov/pubmed/31327527}{Neftel et al.,
+2019}; \href{https://www.ncbi.nlm.nih.gov/pubmed/29198524}{Puram et al.,
+2017}; Tirosh et al.,
+\href{https://science.sciencemag.org/content/352/6282/189.long}{2016a},
+\href{https://www.nature.com/articles/nature20123}{2016b};
+\href{https://science.sciencemag.org/content/355/6332/eaai8478.long}{Venteicher
+et al., 2017}).
+
+To install in R:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{devtools}\OperatorTok{::}\KeywordTok{install_github}\NormalTok{(}\StringTok{"jlaffy/infercna"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\href{https://jlaffy.github.io/infercna/articles/useGenome.html}{Tutorial
+1: Set your genome}\\
+\href{https://jlaffy.github.io/infercna/articles/infercna_tutorial.html}{Tutorial
+2: Example with a scRNA-seq dataset}
+
+\subsection{\texorpdfstring{\texttt{scrabble}}{scrabble}}\label{scrabble}
+
+\href{https://jlaffy.github.io/scrabble}{Website \& Tutorials}
+\textbar{}
+\href{https://jlaffy.github.io/scrabble/reference/index.html}{Functions
+index} \textbar{} \href{https://github.com/jlaffy/scrabble}{Source code}
+\textbar{} \href{https://github.com/jlaffy/scrabble/issues}{Report bugs}
+
+\emph{\textbf{Perform exploratory computational analyses on processed
+scRNAseq gene expression data.}}
+
+The package focuses on unbiased methods in unsupervised clustering and
+dimensionality reduction to identify and characterize the
+transcriptionally-distinct subpopulations of cancer cells residing
+within tumours.
+
+In its current implementation scrabble most closely reflects the methods
+implemented in
+\href{https://www.ncbi.nlm.nih.gov/pubmed/31327527}{Neftel et al., 2019}
+though any of the lab's papers should be useful as reference.
+
+To install in R:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{devtools}\OperatorTok{::}\KeywordTok{install_github}\NormalTok{(}\StringTok{"jlaffy/scrabble"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Contributing}\label{contributing}
+
+Members of the lab to whom the shared code is relevant and of use are
+encouraged to contribute to it. This will both help the code to grow and
+develop but also allow you to fine-tune it for your own analyses. To
+make individual contributions, you can
+\href{https://help.github.com/en/github/getting-started-with-github/fork-a-repo}{fork
+the project from GitHub}. To contribute in a more long-term way, ask
+Julie or Avishay to add you as an official contributor to the GitHub
+package(s) in question.
+
+\chapter{Experimental Protocols}\label{protocols}
+
+A set of experimental protocols can be found in the Tirosh Lab dropbox
+organized by subcategory
+(\href{https://www.dropbox.com/sh/javjoi26i5k5f6t/AADAX4RgSZUFuBwtS6TRE3wua?dl=0}{link
+to folder}). Please add your own protocols so this can become an
+improved and evolving resource for all experimentalists.
+
+\chapter{Ordering}\label{ordering}
+
+\section{Weizmann warehouse orders}\label{weizmann-warehouse-orders}
+
+An ongoing list for the ordering of lab supplies from the Weizmann
+warehouse (machsan) is kept on the whiteboard outside Itay's office.
+Items ordered from the machsan include all disposables (i.e.~tubes,
+gloves, pipettes), common/basic equipment (i.e timers, pipettors, lab
+coats), most tissue culture reagents (i.e.~media, PBS), basic chemicals
+(i.e.~ethanol, DMSO), and commonly used reagents (i.e.~kits for qPCR,
+cDNA synthesis, RNA isolation). Warehouse orders are placed through the
+Tafnit system. Alissa regularly places orders but Rotem and Rony also
+have access to Tafnit (if anyone else would like access, please ask
+Michal Ovadia; note that the system is only available in Hebrew). When
+an item on the list is ordered, it should be marked with a checkmark.
+When the item arrives, it should be erased from the list. Orders from
+the machsan usually arrive within 3-4 days of being placed. If it is
+urgent, it is possible to call the warehouse and arrange to pick up an
+item in person from Piccioto after the order is received.
+
+\section{General ordering}\label{general-ordering}
+
+All items that aren't ordered from the warehouse can be ordered with a
+price quote. In principle, some items from Sigma and Grafiti can also be
+ordered via Tafnit, though it is usually easier to order via price
+quote. Receiving a price quote requires knowing the local distributor of
+the product - many company websites will have a list of international
+distributors. Below, you will also find contact info for many of the
+most relevant distributors.
+
+To receive a price quote, email the relevant distributor with the
+catalog number and manufacturer. You can also ask how long it will take
+for the product to arrive if it's time sensitive (many products are
+ordered from abroad). Include in the quote request or in your email
+signature that you are from the Tirosh lab and lab address/departmental
+affiliation. You can forward price quotes to Natali
+(\href{mailto:natalie.yikne@weizmann.ac.il}{\nolinkurl{natalie.yikne@weizmann.ac.il}})
+and she will place the order.
+
+\section{Office supplies}\label{office-supplies}
+
+Graffiti is the office supply distributor for the Weizmann Institute.
+Their inventory/catalog can be found on
+\href{https://www.graffiti-online.co.il/}{their website}. You can
+receive a price quote from
+\href{mailto:liatji@graf.co.il}{\nolinkurl{liatji@graf.co.il}}.
+
+\section{Antibodies}\label{antibodies}
+
+In the Tirosh Lab dropbox, there is an
+\href{https://www.dropbox.com/s/8fr2p795g5zgepz/antibodies_Tirosh.xlsx?dl=0}{excel
+file} listing the details of the antibodies we have in the lab. Please
+consult it before ordering a new antibody and please update it when you
+receive a new antibody. Biocompare.com is a useful site for finding
+antibodies. You can filter your search with reactive species, conjugated
+fluorophores, and by application (IHC, flow, etc). There are many
+vendors of varying reputation for antibodies --- please ask if you have
+questions about quality or which vendor to choose. For selecting
+fluorophores for FACS antibodies, the
+\href{https://www.bdbiosciences.com/en-us/applications/research-applications/multicolor-flow-cytometry/product-selection-tools/spectrum-viewer}{BD
+spectrum viewer} is a helpful tool for selecting panels of antibodies
+without spectral overlap.
+
+Below are some recommended antibody vendors and their local
+distributors.
+
+For FACS antibodies:
+
+\begin{itemize}
+\tightlist
+\item
+  eBioscience (Rhenium), Biolegend (Enco), Miltenyi (Almog)
+\end{itemize}
+
+For immunohistochemistry/immunocytochemistry antibodies:
+
+\begin{itemize}
+\tightlist
+\item
+  Abcam (Zotal), R\&D (Biotest)
+\end{itemize}
+
+For price quotes:
+
+\begin{itemize}
+\tightlist
+\item
+  Rhenium (eBioscience, Thermofisher) - Yaara Willensky
+  \href{mailto:yaara@rhenium.co.il}{\nolinkurl{yaara@rhenium.co.il}}
+\item
+  Almog (Miltenyi) - Aviva Blechman Peretz
+  \href{mailto:aviva@almog.co.il}{\nolinkurl{aviva@almog.co.il}}
+\item
+  Biotest (R\&D) - Laora
+  \href{mailto:laora@biotest.co.il}{\nolinkurl{laora@biotest.co.il}}
+\item
+  Zotal (Abcam) - Anna Bernstein
+  \href{mailto:anna@zotal.co.il}{\nolinkurl{anna@zotal.co.il}}
+\item
+  Enco (Biolegend) - Yifat Ovadia -
+  \href{mailto:Yifat@enco.co.il}{\nolinkurl{Yifat@enco.co.il}}
+\end{itemize}
+
+\section{Molecular biology}\label{molecular-biology}
+
+Many popular molecular biology kits/products can be found in the
+warehouse (for qPCR we are typically using Applied Biosystems FAST SYBR
+green, for cDNA synthesis we like the Applied Biosystems high capacity
+cDNA kit, both available from the warehouse). For RNA isolation, Qiagen
+kits are available from the warehouse, though our favorite is the Zymo
+Quick RNA micro prep kit (Zotal is the distributor).
+
+\section{Growth factors}\label{growth-factors}
+
+Please check the
+\href{https://www.dropbox.com/s/q0dn3a3th12y822/cytokines_GFs_Tirosh.xlsx?dl=0}{growth
+factors/cytokine spreadsheet} in the Tirosh Lab dropbox to see inventory
+and please update when you receive something new. We have good
+experience ordering growth factors/cytokines from Peprotech located in
+Park HaMada (email
+\href{mailto:ori@peprotechasia.com}{\nolinkurl{ori@peprotechasia.com}}
+for quotes) and from Sino Biological (email Yifat Ovadia -
+\href{mailto:Yifat@enco.co.il}{\nolinkurl{Yifat@enco.co.il}} for a
+quote).
+
+\section{Miltenyi/MACS products}\label{miltenyimacs-products}
+
+Almog is the supplier for Miltenyi products including
+reagents/disposables for the OctoMACS tissue dissociator, the dead cell
+removal kit, and MACS beads/reagants. Email
+\href{mailto:aviva@almog.co.il}{\nolinkurl{aviva@almog.co.il}} or
+\href{mailto:netta@almog.co.il}{\nolinkurl{netta@almog.co.il}} for
+quotes. There is an option to either place an individual order or to
+join the monthly departmental order which saves money but takes longer.
+If your order is non-urgent, you can request the FOB price and ask
+Natali to add it to the monthly departmental order when you send her the
+quote.
+
+\section{Drugs}\label{drugs}
+
+Cayman Chemicals is a reasonably priced and reliable supplier for
+drugs/compounds. Their distributor is Enco
+(\href{mailto:Yifat@enco.co.il}{\nolinkurl{Yifat@enco.co.il}} for
+quotes). Other vendors for drugs/chemical compounds include Sigma/Merck
+(\href{mailto:shir.yohai@merckgroup.com}{\nolinkurl{shir.yohai@merckgroup.com}}),
+Molport
+(\href{mailto:jose.garcia-tenorio@molport.com}{\nolinkurl{jose.garcia-tenorio@molport.com}}),
+and Selleck
+(\href{mailto:manager@tivanbiotech.com}{\nolinkurl{manager@tivanbiotech.com}}).
+
+\section{Chemicals}\label{chemicals}
+
+Sigma/Merck is the largest distributor for chemicals. Many common
+chemicals can be ordered via the warehouse; Sigma price quote requests
+can be sent to
+\href{mailto:shir.yohai@merckgroup.com}{\nolinkurl{shir.yohai@merckgroup.com}}.
+
+\section{Primers}\label{primers}
+
+For primer design, everyone has their favorite program, but NCBI Primer
+BLAST is a good place to start. We order primers through IDT/Syntezza
+(idtdna.com). You can create your own user account with IDT on their
+site. Since primers are inexpensive and we tend to place small orders,
+we keep a standing order with IDT. In the payment order field, you can
+write `Tirosh lab standing order'. You can email Chany Frankel
+(\href{mailto:chany@syntezza.com}{\nolinkurl{chany@syntezza.com}}) to
+confirm that there is money remaining in the standing order or to
+request to add money to the standing order via a price quote.
+
+\section{Illumina kits}\label{illumina-kits}
+
+Danyel Biotech is the distributor for Illumina sequencing kits (request
+a quote from
+\href{mailto:sigal@danyel.co.il}{\nolinkurl{sigal@danyel.co.il}}). The
+current kit in use for the NextSeq 500/550 is the NextSeq 500 high
+output kit (75 cycles) FC-4-4-2005.
+
+\chapter{Weizmann Services}\label{wisServices}
+
+\section{Internal Services}\label{internal-services}
+
+You can login to internal services using your Weizmann username/password
+through the Weizmann website on a computer connected to the Weizmann
+network or remotely with a VPN connection. Internal services functions
+as an ordering/payment system for most services within the Institute.
+
+\section{Printing Services}\label{printing-services}
+
+For printing services, including printing of posters, you can make the
+order in Internal Services. A PDF of the poster (or Dropbox link to PDF)
+can be sent to
+\href{mailto:fiana.parente@weizmann.ac.il}{\nolinkurl{fiana.parente@weizmann.ac.il}}.
+It is also recommended to email or call Fiana to confirm receipt of the
+order. Poster templates can be found in the Tirosh lab dropbox folder.
+For more info on printing services, see
+\href{https://www.weizmann.ac.il/RSD/units/design-photography-printing-branch/overview}{here}.
+
+\section{VPN connection}\label{vpn-connection}
+
+A VPN connection allows you to access the Weizmann network and the WEXAC
+server remotely. You can request a VPN connection through RSA soft token
+from Michal Ovadia. She will make the order to IT and IT will send
+further instructions.
+
+\section{Server (WEXAC) access/space}\label{server-wexac-accessspace}
+
+You can request WEXAC access through Michal Ovadia and she will submit
+the request to IT.
+
+\section{Cryostorage}\label{cryostorage}
+
+\section{Sending and Receiving
+Packages}\label{sending-and-receiving-packages}
+
+Fedex shipments can be coordinated through Michal Ovadia. Our Fedex
+representative is Re'em Shpitzer
+(\href{mailto:Rshiptzer@fdx.co.il}{\nolinkurl{Rshiptzer@fdx.co.il}},
+054-560-6980) and our Fedex billing \# is 579301163. Shipments of
+biological materials to/from abroad should include a declaration of
+essence and a customs declaration. If temperature sensitive, be generous
+with the dry ice.
+
+\section{FACS unit}\label{facs-unit}
+
+You should visit the unit in person to register and coordinate training.
+Also, a safety form (to be renewed yearly) needs to be filled out and
+submitted for each user and can be accessed under `FACS' in Internal
+Services. After-hours access through your I.D. card can also be arranged
+with the unit. Once you are a registered user, you can reserve equipment
+through Internal Services. Visit the
+\href{https://www.weizmann.ac.il/LS_CoreFacilities/flow-cytometry/about}{FACS
+unit site} for further info on the unit, including the instruments.
+
+\section{Sandbox unit}\label{sandbox-unit}
+
+The Sandbox Unit is part of the Life Science Core Facilities located in
+the Levine Building. The unit offers researchers access and support for
+NGS-related technologies including library generation for bulk RNA-Seq
+and 10X 3' scRNA-Seq as well as other 10X products (i.e.~ATAC-Seq). A
+3-day workshop on generation of bulk RNA-Seq libraries with the bulk
+MARS-Seq protocol is offered regularly. Unlike traditional core units,
+you bring your samples and do the work yourself but all the materials
+and equipment are located there. Reservations for bench space and
+payment for use of supplies/reagants is via Genomics in Internal
+Services. Contact Merav Kedmi
+(\href{mailto:merav.kedmi@weizmann.ac.il}{\nolinkurl{merav.kedmi@weizmann.ac.il}},
+x9212) or Hadas Keren-Shaul
+(\href{mailto:hadas.keren-shaul@weizmann.ac.il}{\nolinkurl{hadas.keren-shaul@weizmann.ac.il}})
+to arrange training, workshop attendance, and permissions. Additionally,
+there is a Sandbox Whatsapp group for coordinating shared sequencing
+runs (Hadas is admin).
+
+There are also two NextSeq 500/550 sequencers in the unit. For training
+and permissions, please contact Muriel Chemla
+(\href{mailto:muriel.chemla@weizmann.ac.il}{\nolinkurl{muriel.chemla@weizmann.ac.il}})
+in LSCF. Independent users can reserve sequencers through the Sandbox
+reservation system in Internal Services. Note that we are not charged
+for the sequencing run, only for the Illumina kit ordered through
+Danyel. Initiating a sequencing run also requires an account in susanc
+(ordered through the Bioinformatics Unit of LCSF, contact Irit Orr
+\href{mailto:irit.orr@weizmann.ac.il}{\nolinkurl{irit.orr@weizmann.ac.il}}
+x2470). See
+\href{https://susanc.weizmann.ac.il/static/doc//howto.html}{this link}
+for SampleSheet templates/info required for initiating a sequencing run.
+
+\chapter{Budgets}\label{budgets}
+
+Budgets beginning with 71- correspond to external grants and budgets
+beginning with 72- correspond to internal grants. These budgets can be
+used for most scientific supplies and services. Abisch Frankel (budget
+713381) is only for kits for scRNA-Seq and for sequencing. It is
+preferable to use external budgets first. Beyond that, priority is based
+on expiration date and money remaining (best to use budgets with closest
+expiration date and less money first). Equipment budgets begin with 4-.
+For questions concerning budgets, contact Elinor David
+(\href{mailto:elinor.david@weizmann.ac.il}{\nolinkurl{elinor.david@weizmann.ac.il}},
+x4062).
+
+Additionally, PhD students and postdocs have travel allowances. PhD
+students receive \$2000 for travel following submission of their
+research proposal and \$2250 following submission of their interim
+report. For postdocs, the annual allowance is \$2000 yearly and the
+calendar year starts on 1 October.
+
+\chapter{Equipment and inventory}\label{equipment}
+
+An excel sheet of the equipment found in the lab is in the Tirosh Lab
+dropbox folder. Lumitron is the distributor who sold us the centrifuges
+and the PCR machine and they can be contacted for service
+(\href{mailto:adi.s@lumitron.co.il}{\nolinkurl{adi.s@lumitron.co.il}},
+073-2000777 for service requests). Getter is the supplier/service
+provider for the tissue culture hoods, the incubators, and the
+fridges/freezers (Yuval Borenstein,
+\href{mailto:yuvalb@getter.co.il}{\nolinkurl{yuvalb@getter.co.il}},
+03-5761520 for service requests). Rhenium is the supplier/service
+provider for the microscope and Countess (Hadar Adler,
+\href{mailto:Hadar@rhenium.co.il}{\nolinkurl{Hadar@rhenium.co.il}}) and
+the FACS analyzer
+(\href{mailto:tech.support@rhenium.co.il}{\nolinkurl{tech.support@rhenium.co.il}},
+08-955-8855 for service requests). Hay Cohen (08-934-344, Wolfson 408)
+is the department administrator who oversees many equipment issues and
+contacting him is a good starting place for equipment concerns.
+
+\section{Office Supplies}\label{office-supplies-1}
+
+Office supplies (pens, binders, notebooks, etc) can be found on the
+shelves and in the drawers located by the printer.
+
+\section{Lab supplies}\label{lab-supplies}
+
+Extra stocks of disposables (i.e.~tissue culture plates and flasks,
+pipette tips, eppendorfs) can be found in the closet in the tissue
+culture room and in the closets with our lab name in the hall. These are
+good places to check first if you think we may be out of something.
+
+\section{Cytoflex (FACS analyzer)}\label{cytoflex-facs-analyzer}
+
+Guidance and training on the Cytoflex can also be coordinated with
+Carmit Hillel-Karniel
+(\href{mailto:carmit@rhenium.co.il}{\nolinkurl{carmit@rhenium.co.il}}).
+The sheath fluid consists of Millipore-grade water and 0.02\% sodium
+azide. It can be either prepared by us or ordered through Rhenium. A
+deep clean with Contrad should be performed monthly. A cleansing agent
+with detergent is used for the daily clean. The blue tank is for sheath
+fluid and the yellow tank is for waste. We have 3 lasers (blue, red,
+violet) and the detector configuration can be viewed on the desktop of
+the Cytoflex computer. A
+\href{https://www.dropbox.com/s/ckvy0vshi45e95r/LSR\%20II\%20Quick\%20Reference.docx?dl=0}{word
+doc outlining Cytoflex daily maintenance and use} is in the Tirosh Lab
+dropbox.
+
+\chapter{Reading list}\label{readingList}
+
+A folder for lab recommended papers and other useful resources
+(statistics,R, etc) is found on the lab dropbox at
+\href{https://www.dropbox.com/sh/52ybes4a40ypn0q/AAAL2FlVKqRJw-Z4ScuWTW7Ra?dl=0}{this
+link}. The folder is organized by topics which reflect the main
+directions of the lab. The papers included are a short list of ``core''
+papers that each lab member should read. Each new member of the lab
+should start by reading the relevant papers to them. Any lab member can
+recommend a paper to be added to the reading list, and this list is
+managed by the chosen lab member that is responsible. In addition, in
+the ``R'' folder, there is an excel sheet with recommended online
+resources.
+
+\chapter{Lab safety and Waste disposal}\label{safety}
+
+\section{General Safety}\label{general-safety}
+
+tl;dr x2999 or 08-934-2999 for emergencies and to report accidents
+(24/7)
+
+All lab members are required to attend a safety training. The powers at
+be will likely contact you with a date to attend but if you choose to be
+proactive you can email
+\href{mailto:safety.training@weizmann.ac.il}{\nolinkurl{safety.training@weizmann.ac.il}}
+for registration. :) A first aid kit is located on the top shelf by the
+coffee machine (red bag). An emergency shower and eyewash station as
+well as absorbent material for pouring on spills can be found
+immediately outside the door of the main lab. All accidents should be
+reported to x2999. Our annual lab safety plan (ASP) can be found in the
+Tirosh Lab dropbox.
+
+See
+\href{https://www.weizmann.ac.il/safety/chemical-safety/general-guidelines}{here}
+for detailed safety information.
+
+\section{Waste disposal}\label{waste-disposal}
+
+Chemical and biological waste can be disposed of in the chemical and
+biological waste closet located in the opposite corridor on the first
+floor of Wolfson. Chemical waste containers are located in the cabinet
+above the sink in the main lab. Stickers for proper labeling are located
+in the waste closet. Bags for biological waste are in the bottom to the
+right of the sink in the main lab and in the bottom drawer in the tissue
+culture room. Tape the bag shut before placing it in the biological
+waste bin of the waste closet. Vacuum traps should be emptied before the
+fluid level passes the line marked on them. They can be emptied into the
+sink but should be refilled with 10\% volume of bleach after emptying.
+
+\section{Chemical hood}\label{chemical-hood}
+
+When working with hazardous chemicals, including Trizol and PFA, use the
+hood located next door to the main lab in the common equipment room.
+Please remember to clean up after yourself.
+
+\section{Safety equipment}\label{safety-equipment}
+
+Experimentalists should wear a lab coat, closed-toe shoes, and gloves
+when conducting experiments. A face mask and insulated gloves for liquid
+nitrogen are located in the main lab. Take special care when handling
+human samples and avoid use of sharps when handling these samples if
+possible. HBV vaccination is required for experimentalists handling
+human samples.
+
+\chapter{Lab Maintenance}\label{labMaintenance}
+
+Ongoing chores and responsibilities to be divided among experimentalists
+include:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  autoclave - preparation of materials (eppendorfs, Pasteur pipettes,
+  H20) and transporting to/from autoclave on 3rd floor
+\item
+  waste disposal - bringing chemical and biological waste to the waste
+  disposal closet (and replacing with new bags/containers), emptying
+  vacuum traps in tissue culture and main lab and refilling with bleach
+\item
+  tissue culture maintenance - replacing water pans in the incubators
+  and treating with Aquaguard (biweekly to monthly), replacing water in
+  the water bath and treating with Aquaguard (monthly), autoclaving
+  incubator racks (bi-annually), disinfection in case of a
+  contamination, keeping the tissue culture room stocked with supplies
+\item
+  aliquoting of common reagents - aliquoting FBS, pen-strep, glutamine,
+  Aquaguard 1\&2 on a regular basis for the whole lab and keeping these
+  reagents in stock.
+\end{enumerate}
+
+\chapter{WEXAC (Weizmann EXAscale Cluster)}\label{wexac}
+
+For more advanced help and information, please see the
+\href{https://www.dropbox.com/s/uuv6qrkrwlhytrm/wexac_introduction.pdf?dl=0}{WEXAC
+slides} on the lab dropbox.
+
+\section{Software}\label{software}
+
+\texttt{module\ avail} lists all available software.\\
+\texttt{module\ avail} lists software if it exists, or versions of it if
+they exist.\\
+\texttt{module\ load} loads software.\\
+\texttt{module\ ls} lists all software that you have currently loaded.
+
+If you find yourself always loading the same modules, you may want to
+instead add the relevant module load command to your shell's
+configuration file in your home directory, e.g.~to
+\textasciitilde{}/.bashrc. You can create this file if it doesn't exist.
+
+\section{Adding software}\label{adding-software}
+
+Option 1: Email
+\href{mailto:HPC@wexac.weizmann.ac.il}{\nolinkurl{HPC@wexac.weizmann.ac.il}}
+with a request to add software.\\
+Option 2: Compile software in your home directory. Put the executables
+in a sub-directory in your home and make sure to add the directory to
+the \texttt{\$PATH} variable. E.g.
+\texttt{export\ PATH=\textasciitilde{}/bin:\$PATH}, assuming you chose
+to place executables in \texttt{\textasciitilde{}/bin}. To permanently
+update the \$PATH variable, add the export command to your
+\texttt{\textasciitilde{}/.bashrc}.
+
+\section{Database}\label{database}
+
+Some data are used by several labs at Weizmann and as such WEXAC have
+put a significant amount of data under \texttt{/share/db}. You can check
+whether for example your desired genome sequence or index file already
+exists here before downloading it yourself.
+
+\section{Our server on WEXAC}\label{our-server-on-wexac}
+
+Our server or `compute node' is called \texttt{cn077}. It has
+\textasciitilde{}200GB RAM and 1 core (Nov `19). \texttt{cn077} can be
+accessed directly or via one of four `access nodes' (\texttt{access1},
+\texttt{access2}, \texttt{access3}, \texttt{access4}) whose job it is to
+properly manage and distribute memory between lab members. For this
+reason, \textbf{if you're working interactively on the server you should
+primarily use one of the access nodes}. It shouldn't matter which of the
+four you use.
+
+\textbf{Access}\\
+access node:
+\texttt{ssh\ \textless{}username\textgreater{}@access4.wexac.weizmann.ac.il}\\
+compute node:
+\texttt{ssh\ \textless{}username\textgreater{}@cn077.wexac.weizmann.ac.il}
+
+\section{Submitting jobs}\label{submitting-jobs}
+
+If you are running something that requires substantial memory/time, you
+should submit this as a job to one of the queues on WEXAC (or sit back
+and wait to receive a call from HPC).
+
+To name a few queues:\\
+\texttt{tirosh}\\
+\texttt{new-short}\\
+\texttt{new-medium}\\
+\texttt{new-long}\\
+\texttt{new-all}
+
+Which queue you choose can depend on a number of things: job duration \&
+memory requirements, how busy a queue is and which compute node it is
+associated with. For example, the \texttt{tirosh} queue runs jobs on
+\texttt{cn077}. Since \texttt{cn077} is private, the queue is not busy
+(relatively speaking) and your job may start running sooner. On the
+other hand since \texttt{cn077} only has 1 core, a
+computationally-intensive job may finish more slowly than on a queue
+with multiple cores.
+
+For more information on available queues:\\
+\texttt{bqueues\ -a}
+
+To submit a job:\\
+\texttt{bsub\ -q\ \textless{}queue\textgreater{}\ \textless{}job\textgreater{}}
+
+Jobs are by default allocated 1GB of RAM. If this is not enough:\\
+\texttt{bsub\ -q\ \textless{}queue\textgreater{}\ -R\ "rusage{[}mem=XGB{]}"\ \textless{}job\textgreater{}},
+or\\
+\texttt{bsub\ -q\ \textless{}queue\textgreater{}\ -R\ "select{[}mem\textgreater{}XGB{]}"\ \textless{}job\textgreater{}}\\
+where \texttt{X} is the (minimum) amount of memory you want to allocate,
+up to 150GB.
+
+\texttt{bjobs} lists currently running and pending jobs.\\
+\texttt{bkill\ \textless{}job\ ID\textgreater{}} kills job. Job ID is
+given in \texttt{bjobs} output.\\
+\texttt{bpeek} to glance at job progress (\texttt{STDOUT},
+\texttt{STDERR}). See also \texttt{-o} and \texttt{-e} flags in
+\texttt{bsub}.
+
+\bibliography{book.bib,packages.bib}
+
+
+\end{document}
