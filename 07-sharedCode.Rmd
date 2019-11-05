@@ -47,4 +47,4 @@ devtools::install_github("jlaffy/scrabble")
 ```
 
 ## Contributing 
-Members of the lab to whom the shared code is relevant and of use are encouraged to contribute to it. This will both help the code to grow and develop but also allow you to fine-tune it for your own analyses. To make individual contributions, you can fork the project from GitHub. To contribute in a more long-term way, ask Julie or Avishay to add you as an official contributor to the GitHub package(s) in question.
+Members of the lab to whom the shared code is relevant and of use are encouraged to contribute to it. This will both help the code to grow and develop but also allow you to fine-tune it for your own analyses. To make individual contributions, you can [fork the project from GitHub](https://help.github.com/en/github/getting-started-with-github/fork-a-repo). To contribute in a more long-term way, ask Julie or Avishay to add you as an official contributor to the GitHub package(s) in question.
