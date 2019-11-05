@@ -35,7 +35,8 @@ Adding to the lab book is very easy.
 1. Go to the [lab-book]() repository on the dropbox.
 2. Make and save the relevant changes to the .Rmd file in question
    + There is one .Rmd file per chapter.
-3. Email Julie Avishay & Mike so that one of them can submit the edit.
+3. Email Julie Avishay & Mike so that one of them can submit your edit.
+   + To submit the edit, see #3 below.
 
 ### Option 2: computational
 **Note**: this will only work for those whose Github users have been added to the book repository.
@@ -46,10 +47,10 @@ Adding to the lab book is very easy.
         + to clone the repository: `git clone https://github.com/jlaffy/lab-book.git`  
 2. Make and save the relevant changes to the .Rmd file in question.
    + There is one .Rmd file per chapter.
-3. In the terminal, type:
-   1. `git commit -am <myShortMessage>`
-   2. `git pull origin master`
-   3. `git push origin master`
+3. Submit the edit. In the terminal type:
+   + `git commit -am <myShortMessage>`
+   + `git pull origin master`
+   + `git push origin master`
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
