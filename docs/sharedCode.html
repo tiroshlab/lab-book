@@ -51,6 +51,68 @@
 
 
 
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -95,10 +157,12 @@
 <li class="chapter" data-level="6" data-path="labResponsibilities.html"><a href="labResponsibilities.html"><i class="fa fa-check"></i><b>6</b> Lab Responsibilities</a></li>
 <li class="chapter" data-level="7" data-path="sharedDatasets.html"><a href="sharedDatasets.html"><i class="fa fa-check"></i><b>7</b> Shared Datasets</a></li>
 <li class="chapter" data-level="8" data-path="sharedCode.html"><a href="sharedCode.html"><i class="fa fa-check"></i><b>8</b> Shared Code</a><ul>
-<li class="chapter" data-level="8.1" data-path="sharedCode.html"><a href="sharedCode.html#scandal"><i class="fa fa-check"></i><b>8.1</b> scandal</a></li>
-<li class="chapter" data-level="8.2" data-path="sharedCode.html"><a href="sharedCode.html#infercna"><i class="fa fa-check"></i><b>8.2</b> infercna</a></li>
-<li class="chapter" data-level="8.3" data-path="sharedCode.html"><a href="sharedCode.html#scrabble"><i class="fa fa-check"></i><b>8.3</b> scrabble</a></li>
-<li class="chapter" data-level="8.4" data-path="sharedCode.html"><a href="sharedCode.html#contributing"><i class="fa fa-check"></i><b>8.4</b> Contributing</a></li>
+<li class="chapter" data-level="8.1" data-path="sharedCode.html"><a href="sharedCode.html#about-the-r-packages"><i class="fa fa-check"></i><b>8.1</b> About the R packages</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="sharedCode.html"><a href="sharedCode.html#scandal"><i class="fa fa-check"></i><b>8.1.1</b> scandal</a></li>
+<li class="chapter" data-level="8.1.2" data-path="sharedCode.html"><a href="sharedCode.html#infercna"><i class="fa fa-check"></i><b>8.1.2</b> infercna</a></li>
+<li class="chapter" data-level="8.1.3" data-path="sharedCode.html"><a href="sharedCode.html#scrabble"><i class="fa fa-check"></i><b>8.1.3</b> scrabble</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="sharedCode.html"><a href="sharedCode.html#contributing"><i class="fa fa-check"></i><b>8.2</b> Contributing</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="protocols.html"><a href="protocols.html"><i class="fa fa-check"></i><b>9</b> Experimental Protocols</a></li>
 <li class="chapter" data-level="10" data-path="ordering.html"><a href="ordering.html"><i class="fa fa-check"></i><b>10</b> Ordering</a><ul>
@@ -168,40 +232,50 @@
 <div id="sharedCode" class="section level1">
 <h1><span class="header-section-number">Chapter 8</span> Shared Code</h1>
 <p>The aim of the shared code is to implement the lab’s core ideas on analysis of scRNA-seq data. The code is written in R and is publicly available via GitHub (see below). It was designed with a modular approach and hence is separated into several well-defined packages. The packages and functions are well documented and examples are provided within each package.</p>
-<div id="scandal" class="section level2">
-<h2><span class="header-section-number">8.1</span> scandal</h2>
-<ul>
-<li>Description: A framework that enables defining a single-cell experiment. Provides methods for loading the data, preprocessing and quality control, maintaining the data with a low memory footprint (using sparse matrices), various plotting methods, linking meta-data with expression data and more.</li>
-<li>Installation: <code>{r, eval=FALSE} devtools::install_github("dravishays/scandal")</code></li>
-<li>Source code: www.github.com/dravishays/scandal</li>
-<li>Report bugs: <a href="https://github.com/dravishays/scandal/issues" class="uri">https://github.com/dravishays/scandal/issues</a></li>
-<li>References: The package extends the SingleCellExperiment class, adapting it for use in our lab. See this tutorial for an introduction to the SingleCellExperiment class.</li>
-</ul>
+<div id="about-the-r-packages" class="section level2">
+<h2><span class="header-section-number">8.1</span> About the R packages</h2>
+<div id="scandal" class="section level3">
+<h3><span class="header-section-number">8.1.1</span> scandal</h3>
+<p>A framework that enables defining a single-cell experiment. Provides methods for loading the data, preprocessing and quality control, maintaining the data with a low memory footprint (using sparse matrices), various plotting methods, linking meta-data with expression data and more.</p>
+<p><strong>Installation (in R)</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;dravishays/scandal&quot;</span>)</a></code></pre></div>
+<p><strong>Github Links</strong><br />
+- <a href="www.github.com/dravishays/scandal">Browse the source code</a>
+- <a href="https://github.com/dravishays/scandal/issues">Report any bugs</a></p>
+<p><strong>References</strong><br />
+The package extends the <code>SingleCellExperiment</code> class, adapting it for use in our lab. See this tutorial for an introduction to the <code>SingleCellExperiment</code> class.</p>
 </div>
-<div id="infercna" class="section level2">
-<h2><span class="header-section-number">8.2</span> infercna</h2>
-<ul>
-<li>Description: Infer copy-number alterations from (single-cell) RNA-sequencing data.</li>
-<li>Installation: <code>{r, eval=FALSE} devtools::install_github("jlaffy/infercna")</code></li>
-<li>Website &amp; Tutorials: <a href="https://jlaffy.github.io/infercna" class="uri">https://jlaffy.github.io/infercna</a></li>
-<li>Source code: <a href="https://github.com/jlaffy/infercna" class="uri">https://github.com/jlaffy/infercna</a></li>
-<li>Report bugs: <a href="https://github.com/jlaffy/infercna/issues" class="uri">https://github.com/jlaffy/infercna/issues</a></li>
-<li>References: The methodology implemented here was first formulated by Itay with colleagues during his postdoc (Tirosh et al., 2014) and has been tried and tested in several publications since (Filbin et al., 2018; Neftel et al., 2019; Puram et al., 2017; Tirosh et al., 2016a, 2016b; Venteicher et al., 2017).</li>
-</ul>
+<div id="infercna" class="section level3">
+<h3><span class="header-section-number">8.1.2</span> infercna</h3>
+<p>Infer copy-number alterations from (single-cell) RNA-sequencing data.</p>
+<p><strong>Installation (in R)</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;jlaffy/infercna&quot;</span>)</a></code></pre></div>
+<p><strong>Package Website &amp; Tutorials</strong>
+- <a href="https://jlaffy.github.io/infercna">Website homepage</a>
+- <a href="">Tutorial 1: Set your genome</a>
+- <a href="">Tutorial 2: Example with a scRNA-seq dataset</a></p>
+<p><strong>Github Links</strong><br />
+- <a href="www.github.com/jlaffy/infercna">Browse the source code</a>
+- <a href="https://github.com/jlaffy/infercna/issues">Report any bugs</a></p>
+<p><strong>References</strong><br />
+The methodology implemented here was first formulated by Itay with colleagues during his postdoc (Tirosh et al., 2014) and has been tried and tested in several publications since (Filbin et al., 2018; Neftel et al., 2019; Puram et al., 2017; Tirosh et al., 2016a, 2016b; Venteicher et al., 2017).</p>
 </div>
-<div id="scrabble" class="section level2">
-<h2><span class="header-section-number">8.3</span> scrabble</h2>
-<ul>
-<li>Description: Perform exploratory computational analyses on processed scRNAseq gene expression data. The package focuses on unbiased methods in unsupervised clustering and dimensionality reduction to identify and characterize the transcriptionally-distinct subpopulations of cancer cells residing within tumours.</li>
-<li>Installation: <code>{r eval=FALSE} devtools::install_github("jlaffy/scrabble")</code></li>
-<li>Website &amp; Tutorials: <a href="https://jlaffy.github.io/scrabble" class="uri">https://jlaffy.github.io/scrabble</a></li>
-<li>Source code: <a href="https://github.com/jlaffy/scrabble" class="uri">https://github.com/jlaffy/scrabble</a></li>
-<li>Report bugs: <a href="https://github.com/jlaffy/scrabble/issues" class="uri">https://github.com/jlaffy/scrabble/issues</a></li>
-<li>References: In its current implementation scrabble most closely reflects the methods implemented in <a href="www.google.com">Neftel et al., 2019</a> though any of the lab’s papers should be useful as reference.</li>
-</ul>
+<div id="scrabble" class="section level3">
+<h3><span class="header-section-number">8.1.3</span> scrabble</h3>
+<p>Perform exploratory computational analyses on processed scRNAseq gene expression data. The package focuses on unbiased methods in unsupervised clustering and dimensionality reduction to identify and characterize the transcriptionally-distinct subpopulations of cancer cells residing within tumours.</p>
+<p><strong>Installation (in R)</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;jlaffy/scrabble&quot;</span>)</a></code></pre></div>
+<p><strong>Package Website &amp; Tutorials</strong>
+- <a href="https://jlaffy.github.io/scrabble">Website homepage</a></p>
+<p><strong>Github Links</strong><br />
+- <a href="www.github.com/jlaffy/scrabble">Browse the source code</a>
+- <a href="https://github.com/jlaffy/scrabble/issues">Report any bugs</a></p>
+<p><strong>References</strong><br />
+In its current implementation scrabble most closely reflects the methods implemented in <a href="www.google.com">Neftel et al., 2019</a> though any of the lab’s papers should be useful as reference.</p>
+</div>
 </div>
 <div id="contributing" class="section level2">
-<h2><span class="header-section-number">8.4</span> Contributing</h2>
+<h2><span class="header-section-number">8.2</span> Contributing</h2>
 <p>Members of the lab to whom the shared code is relevant and of use are encouraged to contribute to it. This will both help the code to grow and develop but also allow you to fine-tune it for your own analyses. To make individual contributions, you can fork the project from GitHub. To contribute in a more long-term way, ask Julie or Avishay to add you as an official contributor to the GitHub package(s) in question.</p>
 
 </div>
