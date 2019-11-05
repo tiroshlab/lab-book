@@ -1,0 +1,5 @@
+# Budgets {#budgets}
+
+Budgets beginning with 71- correspond to external grants and budgets beginning with 72- correspond to internal grants. These budgets can be used for most scientific supplies and services. Abisch Frankel (budget 713381) is only for kits for scRNA-Seq and for sequencing. It is preferable to use external budgets first. Beyond that, priority is based on expiration date and money remaining (best to use budgets with closest expiration date and less money first). Equipment budgets begin with 4-. For questions concerning budgets, contact Elinor David (elinor.david@weizmann.ac.il, x4062). 
+
+Additionally, PhD students and postdocs have travel allowances. PhD students receive \$2000 for travel following submission of their research proposal and \$2250 following submission of their interim report. For postdocs, the annual allowance is \$2000 yearly and the calendar year starts on 1 October.

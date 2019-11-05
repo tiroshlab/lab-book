@@ -1,0 +1,57 @@
+--- 
+title: "Tirosh Lab Book"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: jlaffy/lab-book
+description: "Help & guidelines for members of the Tirosh lab"
+---
+
+# Homepage 
+
+## Links
+### Useful
+- [Dropbox home](https://www.dropbox.com/home/Tirosh%20Lab)  
+- [Lab publications](http://www.weizmann.ac.il/mcb/tirosh/publications-0)  
+- [Lab website](http://www.weizmann.ac.il/mcb/tirosh/)  
+- [Experimental protocols](https://www.dropbox.com/sh/javjoi26i5k5f6t/AADAX4RgSZUFuBwtS6TRE3wua?dl=0)  
+
+### Fun (and maybe useful)
+- [Lab Twitter](https://twitter.com/tiroshlab?lang=bg)  
+- [Birthdays](https://www.dropbox.com/s/zwss5fg9rkoz7pp/lab%20bday%20list.xlsx?dl=0)  
+- [Lab members](http://www.weizmann.ac.il/mcb/tirosh/group-members)  
+- [Lab trip photos](http://www.weizmann.ac.il/mcb/tirosh/pictures)  
+
+## Adding to the lab book
+Adding to the lab book is very easy.
+
+#### Option 1: non-computational
+1. Go to the [lab-book]() repository on the dropbox.
+2. Make and save the relevant changes to the .Rmd file in question
+   + There is one .Rmd file per chapter.
+3. Email Julie & Avishay so that they can render the book.
+
+#### Option 2: computational
+Note: this will only work for those whose github users have been added to the book repository (i.e. Julie & Avishay). If you have a github account and would like to be added, let us know.
+
+1. Go to the [lab-book]() repository on the dropbox  
+   + OR clone the repository locally and go there. To clone:  
+   + In terminal: `git clone https://github.com/jlaffy/lab-book.git`  
+2. Make and save the relevant changes to the .Rmd file in question.
+   + There is one .Rmd file per chapter.
+3. In R: `bookdown::render_book(input='index.html')`
+   + Make sure you first install the bookdown package:  
+     In R: `install.packages('bookdown')`
+4. In terminal: `git commit -am 'myShortMessage'`
+5. In terminal: `git push origin master`
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```

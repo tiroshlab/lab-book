@@ -1,0 +1,28 @@
+# Weizmann Services {#wisServices}
+
+## Internal Services
+You can login to internal services using your Weizmann username/password through the Weizmann website on a computer connected to the Weizmann network or remotely with a VPN connection. Internal services functions as an ordering/payment system for most services within the Institute. 
+
+## Printing Services
+For printing services, including printing of posters, you can make the order in Internal Services. A PDF of the poster (or Dropbox link to PDF) can be sent to fiana.parente@weizmann.ac.il. It is also recommended to email or call Fiana to confirm receipt of the order. Poster templates can be found in the Tirosh lab dropbox folder. For more info on printing services, see [here](https://www.weizmann.ac.il/RSD/units/design-photography-printing-branch/overview).
+
+## VPN connection
+A VPN connection allows you to access the Weizmann network and the WEXAC server remotely. You can request a VPN connection through RSA soft token from Michal Ovadia. She will make the order to IT and IT will send further instructions.
+
+## Server (WEXAC) access/space
+You can request WEXAC access through Michal Ovadia and she will submit the request to IT.
+
+
+## Cryostorage
+
+
+## Sending and Receiving Packages
+Fedex shipments can be coordinated through Michal Ovadia. Our Fedex representative is Re’em Shpitzer (Rshiptzer@fdx.co.il, 054-560-6980) and our Fedex billing # is 579301163. Shipments of biological materials to/from abroad should include a declaration of essence and a customs declaration. If temperature sensitive, be generous with the dry ice.
+
+## FACS unit
+You should visit the unit in person to register and coordinate training. Also, a safety form (to be renewed yearly) needs to be filled out and submitted for each user and can be accessed under ‘FACS’ in Internal Services. After-hours access through your I.D. card can also be arranged with the unit. Once you are a registered user, you can reserve equipment through Internal Services. Visit the [FACS unit site](https://www.weizmann.ac.il/LS_CoreFacilities/flow-cytometry/about) for further info on the unit, including the instruments.
+
+## Sandbox unit
+The Sandbox Unit is part of the Life Science Core Facilities located in the Levine Building. The unit offers researchers access and support for NGS-related technologies including library generation for bulk RNA-Seq and 10X 3’ scRNA-Seq as well as other 10X products (i.e. ATAC-Seq). A 3-day workshop on generation of bulk RNA-Seq libraries with the bulk MARS-Seq protocol is offered regularly. Unlike traditional core units, you bring your samples and do the work yourself but all the materials and equipment are located there. Reservations for bench space and payment for use of supplies/reagants is via Genomics in Internal Services. Contact Merav Kedmi (merav.kedmi@weizmann.ac.il, x9212) or Hadas Keren-Shaul (hadas.keren-shaul@weizmann.ac.il) to arrange training, workshop attendance, and permissions. Additionally, there is a Sandbox Whatsapp group for coordinating shared sequencing runs (Hadas is admin).
+
+There are also two NextSeq 500/550 sequencers in the unit. For training and permissions, please contact Muriel Chemla (muriel.chemla@weizmann.ac.il) in LSCF. Independent users can reserve sequencers through the Sandbox reservation system in Internal Services. Note that we are not charged for the sequencing run, only for the Illumina kit ordered through Danyel. Initiating a sequencing run also requires an account in susanc (ordered through the Bioinformatics Unit of LCSF, contact Irit Orr irit.orr@weizmann.ac.il x2470). See [this link](https://susanc.weizmann.ac.il/static/doc//howto.html) for SampleSheet templates/info required for initiating a sequencing run.

@@ -1,0 +1,9 @@
+# Lab Maintenance {#labMaintenance}
+
+Ongoing chores and responsibilities to be divided among experimentalists include:
+
+1. autoclave - preparation of materials (eppendorfs, Pasteur pipettes, H20) and transporting to/from autoclave on 3rd floor
+2. waste disposal - bringing chemical and biological waste to the waste disposal closet (and replacing with new bags/containers), emptying vacuum traps in tissue culture and main lab and refilling with bleach
+3. tissue culture maintenance - replacing water pans in the incubators  and treating with Aquaguard (biweekly to monthly), replacing water in the water bath and treating with Aquaguard (monthly), autoclaving incubator racks (bi-annually), disinfection in case of a contamination, keeping the tissue culture room stocked with supplies
+4. aliquoting of common reagents - aliquoting FBS, pen-strep, glutamine, Aquaguard 1&2 on a regular basis for the whole lab and keeping these reagents in stock.
+

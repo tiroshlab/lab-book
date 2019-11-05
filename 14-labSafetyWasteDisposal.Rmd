@@ -1,0 +1,19 @@
+# Lab safety and Waste disposal {#safety}
+
+## General Safety
+tl;dr x2999 or 08-934-2999 for emergencies and to report accidents (24/7)
+
+All lab members are required to attend a safety training. The powers at be will likely contact you with a date to attend but if you choose to be proactive you can email safety.training@weizmann.ac.il for registration. :) A first aid kit is located on the top shelf by the coffee machine (red bag). An emergency shower and eyewash station as well as absorbent material for pouring on spills can be found immediately outside the door of the main lab. All accidents should be reported to x2999. Our
+annual lab safety plan (ASP) can be found in the Tirosh Lab dropbox.
+
+See [here](https://www.weizmann.ac.il/safety/chemical-safety/general-guidelines) for detailed safety information.
+
+## Waste disposal
+Chemical and biological waste can be disposed of in the chemical and biological waste closet located in the opposite corridor on the first floor of Wolfson. Chemical waste containers are located in the cabinet above the sink in the main lab. Stickers for proper labeling are located in the waste closet. Bags for biological waste are in the bottom to the right of the sink in the main lab and in the bottom drawer in the tissue culture room. Tape the bag shut before placing it in the biological waste bin of the waste closet. Vacuum traps should be emptied before the fluid level passes the line marked on them. They can be emptied into the sink but should be refilled with 10% volume of bleach after emptying. 
+
+## Chemical hood
+When working with hazardous chemicals, including Trizol and PFA, use the hood located next door to the main lab in the common equipment room. Please remember to clean up after yourself.
+
+## Safety equipment
+Experimentalists should wear a lab coat, closed-toe shoes, and gloves when conducting experiments. A face mask and insulated gloves for liquid nitrogen are located in the main lab. Take special care when handling human samples and avoid use of sharps when handling these samples if possible. HBV vaccination is required for experimentalists handling human samples.
+

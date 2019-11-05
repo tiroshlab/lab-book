@@ -1,0 +1,25 @@
+# General research directions of the lab {#general}
+
+We are a cancer systems biology lab, focused on intra-tumor heterogeneity (ITH). Our main goal is to understand ITH, the mechanisms that generate and maintain it, and the functional and clinical implications. 
+
+## ITH mechanisms
+We consider three main types of mechanisms:
+1. Genetic heterogeneity (genetic subclones).
+2. Microenvironmental influences (e.g. oxygen/nutrient availability and cell-cell interactions)
+3. Intrinsic cellular plasticity (cells dynamically transitioning between states). 
+
+## ITH functional/clinical implications
+We are interested in all implications of ITH but focus primarily on the questions of drug resistance, cancer stem cells and metastasis/invasion, all of which have highly significant clinical implications.
+
+## Approach
+We use a systems biology approach, which means that we combine experimental and computational approaches to address these questions from a global perspective, typically through single cell RNA-seq or other high-throughput profiling approaches, followed by extensive computational analyses, and experimental validations.
+
+## Experimentally
+We emphasize the ability to work directly with patient samples and to that end we work closely with clinicians. In addition, we work with “simple” model systems (cancer cell lines), but only after we verify that they recapitulate certain aspects of heterogeneity as seen in tumors. We tend to avoid working with complex models and with experimental systems that are difficult and slow to work with, such as mice models, although this is possible through collaborations with other labs. Our main experimental method is scRNA-seq, but we try to combine it and follow up with complementary approaches (FACS analysis, spatial analyses, time-course experiments, ATAC-seq) which will expand and evolve with time.  
+
+## Computationally
+We emphasize a biology-centered and data-driven approach, and hence perform hands-on extensive, iterative, and integrative data analyses while avoiding the “blind” use of computational tool. We do not focus on any particular computational methodology but attempt to use the appropriate method for each analysis, while keeping the analysis intuitive and simple. 
+
+## Biological contexts
+We study primarily glioma and head and neck cancer. These are long-term directions in which we collaborate closely with experimental/clinical groups (Mario Suva from Boston and Sid Puram from St. Louis), striving to deeply understand the underlying biology and ultimately make a clinical impact. We are currently starting also a third focus on neuroendocrine tumors (NETs), in collaboration with Amit Tirosh from Sheba Medical Center (no family relations). In addition, specific projects involve other contexts due to either exceptional diversity (e.g. Carcinosarcomas: tumors that contain both carcinoma and sarcoma cells), or collaborative efforts (e.g. in ovarian and pancreatic cancer).
+

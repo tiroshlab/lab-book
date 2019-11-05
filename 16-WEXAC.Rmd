@@ -1,0 +1,54 @@
+# WEXAC (Weizmann EXAscale Cluster) {#wexac}
+
+For more advanced help and information, please see the [WEXAC slides](https://www.dropbox.com/s/uuv6qrkrwlhytrm/wexac_introduction.pdf?dl=0) on the lab dropbox.
+
+## Software
+`module avail` lists all available software.   
+`module avail` <software> lists software if it exists, or versions of it if they exist.  
+`module load` <software> loads software.  
+`module ls` lists all software that you have currently loaded.  
+
+If you find yourself always loading the same modules, you may want to instead add the relevant module load command to your shell’s configuration file in your home directory, e.g. to ~/.bashrc. You can create this file if it doesn’t exist.
+
+## Adding software 
+
+Option 1: Email HPC@wexac.weizmann.ac.il with a request to add software.  
+Option 2: Compile software in your home directory. Put the executables in a sub-directory in your home and make sure to add the directory to the `$PATH` variable. E.g. `export PATH=~/bin:$PATH`, assuming you chose to place executables in `~/bin`. To permanently update the $PATH variable, add the export command to your `~/.bashrc`.
+
+## Database
+Some data are used by several labs at Weizmann and as such WEXAC have put a significant amount of data under `/share/db`. You can check whether for example your desired genome sequence or index file already exists here before downloading it yourself.
+
+## Our server on WEXAC
+Our server or ‘compute node’ is called `cn077`. It has ~200GB RAM and 1 core (Nov ‘19). `cn077` can be accessed directly or via one of four ‘access nodes’ (`access1`, `access2`, `access3`, `access4`) whose job it is to properly manage and distribute memory between lab members. For this reason, **if you’re working interactively on the server you should primarily use one of the access nodes**. It shouldn’t matter which of the four you use.
+
+*Access*
+access node: `ssh <username>@cn077.wexac.weizmann.ac.il`  
+compute node: `ssh <username>@access4.wexac.weizmann.ac.il`  
+
+## Submitting jobs
+If you are running something that requires substantial memory/time, you should submit this as a job to one of the queues on WEXAC (or sit back and wait to receive a call from HPC).
+
+To name a few queues:  
+`tirosh`  
+`new-short`  
+`new-medium`  
+`new-long`  
+`new-all`
+
+Which queue you choose can depend on a number of things: job duration & memory requirements, how busy a queue is and which compute node it is associated with. For example, the `tirosh` queue runs jobs on `cn077`. Since `cn077` is private, the queue is not busy (relatively speaking) and your job may start running sooner. On the other hand since `cn077` only has 1 core, a computationally-intensive job may finish more slowly than on a queue with multiple cores.
+
+For more information on available queues:  
+`bqueues -a`
+
+To submit a job:  
+`bsub -q <queue> <job>`
+
+Jobs are by default allocated 1GB of RAM. If this is not enough:  
+`bsub -q <queue> -R "rusage[mem=XGB]" <job>`, or  
+`bsub -q <queue> -R "select[mem>XGB]" <job>`  
+where `X` is the (minimum) amount of memory you want to allocate, up to 150GB.
+
+`bjobs` lists currently running and pending jobs.  
+`bkill <job ID>` kills job. Job ID is given in `bjobs` output.  
+`bpeek` to glance at job progress (`STDOUT`, `STDERR`). See also `-o` and `-e` flags in `bsub`.
+

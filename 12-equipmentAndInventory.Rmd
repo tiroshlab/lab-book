@@ -1,0 +1,12 @@
+# Equipment and inventory {#equipment}
+
+An excel sheet of the equipment found in the lab is in the Tirosh Lab dropbox folder. Lumitron is the distributor who sold us the centrifuges and the PCR machine and they can be contacted for service (adi.s@lumitron.co.il, 073-2000777 for service requests). Getter is the supplier/service provider for the tissue culture hoods, the incubators, and the fridges/freezers (Yuval Borenstein, yuvalb@getter.co.il, 03-5761520 for service requests). Rhenium is the supplier/service provider for the microscope and Countess (Hadar Adler, Hadar@rhenium.co.il) and the FACS analyzer (tech.support@rhenium.co.il, 08-955-8855 for service requests). Hay Cohen (08-934-344, Wolfson 408) is the department administrator who oversees many equipment issues and contacting him is a good starting place for equipment concerns.
+
+## Office Supplies
+Office supplies (pens, binders, notebooks, etc) can be found on the shelves and in the drawers located by the printer.
+
+## Lab supplies
+Extra stocks of disposables (i.e. tissue culture plates and flasks, pipette tips, eppendorfs) can be found in the closet in the tissue culture room and in the closets with our lab name in the hall. These are good places to check first if you think we may be out of something.
+
+## Cytoflex (FACS analyzer)
+Guidance and training on the Cytoflex can also be coordinated with Carmit Hillel-Karniel (carmit@rhenium.co.il). The sheath fluid consists of Millipore-grade water and 0.02% sodium azide. It can be either prepared by us or ordered through Rhenium. A deep clean with Contrad should be performed monthly. A cleansing agent with detergent is used for the daily clean. The blue tank is for sheath fluid and the yellow tank is for waste. We have 3 lasers (blue, red, violet) and the detector configuration can be viewed on the desktop of the Cytoflex computer. A [word doc outlining Cytoflex daily maintenance and use](https://www.dropbox.com/s/ckvy0vshi45e95r/LSR%20II%20Quick%20Reference.docx?dl=0) is in the Tirosh Lab dropbox. 

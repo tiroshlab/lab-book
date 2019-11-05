@@ -1,0 +1,5 @@
+# Reading list {#readingList}
+
+A folder for lab recommended papers and other useful resources (statistics,R, etc) is found on the lab dropbox at [this link](https://www.dropbox.com/sh/52ybes4a40ypn0q/AAAL2FlVKqRJw-Z4ScuWTW7Ra?dl=0).
+The folder is organized by topics which reflect the main directions of the lab. The papers included are a short list of “core” papers that each lab member should read. Each new member of the lab should start by reading the relevant papers to them. Any lab member can recommend a paper to be added to the reading list, and this list is managed by the chosen lab member that is responsible. In addition, in the “R” folder, there is an excel sheet with recommended online resources. 
+
