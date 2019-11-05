@@ -27,7 +27,9 @@ description: "Help & guidelines for members of the Tirosh lab"
 - [Lab trip photos](http://www.weizmann.ac.il/mcb/tirosh/pictures)  
 
 ## Adding to the book
-Adding to the lab book is easy.
+Adding to the lab book is easy. 
+
+Note: with both options below, you will have to wait a few minutes before your edits appear on the website. This is because the book needs to be re-built after edits are made.
 
 ### Option 1: non-computational
 1. Go to the website chapter that you would like to edit.
