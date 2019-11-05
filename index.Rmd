@@ -35,7 +35,7 @@ Adding to the lab book is easy.
    + E.g. [Chapter 3 Lab members and contact details](https://jlaffy.github.io/lab-book/contact.html)
 2. Click on the edit icon at the top of the website page.
 3. Make your edits and submit them (green button at the bottom of the page).
-4. Wait a short while for your edit to be accepted.
+4. If you do not have a Github account, wait a short while for your edit to be accepted. :)
 
 ### Option 2: computational
 **Note**: this will only work for those whose Github users have been added to the book repository.
