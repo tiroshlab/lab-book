@@ -5,8 +5,8 @@ set -e
 [ -z "${GITHUB_PAT}" ] && exit 0
 [ "${TRAVIS_BRANCH}" != "master" ] && exit 0
 
-git config --global user.email "xie@yihui.name"
-git config --global user.name "Yihui Xie"
+git config --global user.email "julie.laffy@weizmann.ac.il"
+git config --global user.name "Julie Laffy"
 
 git clone -b gh-pages https://${GITHUB_PAT}@github.com/${TRAVIS_REPO_SLUG}.git book-output
 cd book-output
