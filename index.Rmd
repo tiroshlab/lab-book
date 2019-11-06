@@ -1,6 +1,6 @@
 --- 
 title: "Tirosh Lab Book"
-date: "Last updated on `r Sys.Date()`"
+date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
