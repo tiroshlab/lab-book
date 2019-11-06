@@ -7,14 +7,14 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: tiroshlab/lab-book
+github-repo: jlaffy/lab-book
 description: "Help & guidelines for members of the Tirosh lab"
 ---
 
 # Homepage 
 
 ## Links
-
+YOOOOO
 ### Useful
 - [Dropbox home](https://www.dropbox.com/home/Tirosh%20Lab)  
 - [Lab publications](http://www.weizmann.ac.il/mcb/tirosh/publications-0)  
@@ -28,31 +28,30 @@ description: "Help & guidelines for members of the Tirosh lab"
 - [Lab trip photos](http://www.weizmann.ac.il/mcb/tirosh/pictures)  
 
 ## Adding to the book
-Adding to the lab book is easy. 
-
-Note: with both options below, you will have to wait a few minutes before your edits appear on the website. This is because the book needs to be re-built after edits are made.
+Adding to the lab book is easy.
 
 ### Option 1: non-computational
 1. Go to the website chapter that you would like to edit.
-    + E.g. [Chapter 3 Lab members and contact details](https://tiroshlab.github.io/lab-book/contact.html)
+   + E.g. [Chapter 3 Lab members and contact details](https://jlaffy.github.io/lab-book/contact.html)
 2. Click on the edit icon at the top of the website page.
 3. Make your edits and submit them (green button at the bottom of the page).
+4. If you do not have a Github account, wait a short while for your edit to be accepted. :)
 
 ### Option 2: computational
 **Note**: this will only work for those whose Github users have been added to the book repository.
 
 1. Go to your local clone of the repository.
-    + to clone the repository: `git clone https://github.com/tiroshlab/lab-book.git`  
+    + to clone the repository: `git clone https://github.com/jlaffy/lab-book.git`  
 2. Make and save the relevant changes to the .Rmd file in question.
-    + There is one .Rmd file per chapter.
+   + There is one .Rmd file per chapter.
 3. Submit the edit. In the terminal type:
-    + `git commit -am <myShortMessage>`
-    + `git pull origin master`
-    + `git push origin master`
+   + `git commit -am <myShortMessage>`
+   + `git pull origin master`
+   + `git push origin master`
 
 
 ## Book formats
-The default book is a [website](https://tiroshlab.github.io/lab-book). You can also choose to download the book as PDF or ebook. To do this, click the download icon at the top of the website page. 
+The default book is a [website](https://jlaffy.github.io/lab-book). You can also choose to download the book as PDF or ebook. To do this, click the download icon at the top of the website page. 
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
