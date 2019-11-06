@@ -22,7 +22,7 @@ description: "Help & guidelines for members of the Tirosh lab"
 - [Experimental protocols](https://www.dropbox.com/sh/javjoi26i5k5f6t/AADAX4RgSZUFuBwtS6TRE3wua?dl=0)  
 
 ### Fun
-- [Lab Twitter](https://twitter.com/tiroshlab?lang=bg)  
+- [Lab Twitter](https://twitter.com/tiroshlab)  
 - [Birthdays](https://www.dropbox.com/s/zwss5fg9rkoz7pp/lab%20bday%20list.xlsx?dl=0)  
 - [Lab members](http://www.weizmann.ac.il/mcb/tirosh/group-members)  
 - [Lab trip photos](http://www.weizmann.ac.il/mcb/tirosh/pictures)  
