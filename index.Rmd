@@ -29,6 +29,8 @@ description: "Help & guidelines for members of the Tirosh lab"
 ## Adding to the book
 Adding to the lab book is easy.
 
+Note that with both options below, you will have to wait a few minutes for your edits to appear on the website. This is because the lab book needs to be re-built after any changes are made. 
+
 ### Option 1: non-computational
 1. Go to the website chapter that you would like to edit.
     + E.g. [Chapter 3 Lab members and contact details](https://jlaffy.github.io/lab-book/contact.html)
