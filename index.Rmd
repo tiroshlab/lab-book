@@ -14,6 +14,7 @@ description: "Help & guidelines for members of the Tirosh lab"
 # Homepage 
 
 ## Links
+YOOOOO
 ### Useful
 - [Dropbox home](https://www.dropbox.com/home/Tirosh%20Lab)  
 - [Lab publications](http://www.weizmann.ac.il/mcb/tirosh/publications-0)  
@@ -27,9 +28,9 @@ description: "Help & guidelines for members of the Tirosh lab"
 - [Lab trip photos](http://www.weizmann.ac.il/mcb/tirosh/pictures)  
 
 ## Adding to the book
-Adding to the lab book is easy.
+Adding to the lab book is easy. 
 
-Note that with both options below, you will have to wait a few minutes for your edits to appear on the website. This is because the lab book needs to be re-built after any changes are made. 
+Note: with both options below, you will have to wait a few minutes before your edits appear on the website. This is because the book needs to be re-built after edits are made.
 
 ### Option 1: non-computational
 1. Go to the website chapter that you would like to edit.
