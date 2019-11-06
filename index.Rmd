@@ -14,7 +14,6 @@ description: "Help & guidelines for members of the Tirosh lab"
 # Homepage 
 
 ## Links
-YOOOOO
 ### Useful
 - [Dropbox home](https://www.dropbox.com/home/Tirosh%20Lab)  
 - [Lab publications](http://www.weizmann.ac.il/mcb/tirosh/publications-0)  
@@ -32,7 +31,7 @@ Adding to the lab book is easy.
 
 ### Option 1: non-computational
 1. Go to the website chapter that you would like to edit.
-   + E.g. [Chapter 3 Lab members and contact details](https://jlaffy.github.io/lab-book/contact.html)
+    + E.g. [Chapter 3 Lab members and contact details](https://jlaffy.github.io/lab-book/contact.html)
 2. Click on the edit icon at the top of the website page.
 3. Make your edits and submit them (green button at the bottom of the page).
 4. If you do not have a Github account, wait a short while for your edit to be accepted. :)
@@ -43,11 +42,11 @@ Adding to the lab book is easy.
 1. Go to your local clone of the repository.
     + to clone the repository: `git clone https://github.com/jlaffy/lab-book.git`  
 2. Make and save the relevant changes to the .Rmd file in question.
-   + There is one .Rmd file per chapter.
+    + There is one .Rmd file per chapter.
 3. Submit the edit. In the terminal type:
-   + `git commit -am <myShortMessage>`
-   + `git pull origin master`
-   + `git push origin master`
+    + `git commit -am <myShortMessage>`
+    + `git pull origin master`
+    + `git push origin master`
 
 
 ## Book formats
