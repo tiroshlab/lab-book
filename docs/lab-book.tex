@@ -177,40 +177,36 @@
 
 \section{Adding to the book}\label{adding-to-the-book}
 
-Adding to the lab book is easy.
+Adding to the lab book is easy. The only requirement is that you
+\href{https://github.com/join?source=header-home}{make a Github
+account}, which shouldn't take more than a couple of minutes to do.
 
-\subsection{Option 1:
-non-computational}\label{option-1-non-computational}
+Note that since the book is re-built with each edit made, \textbf{you
+may have to wait a few minutes before your changes become visible}.
+
+\subsection{Option 1}\label{option-1}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
   Go to the website chapter that you would like to edit.
-\end{enumerate}
 
-\begin{itemize}
-\tightlist
-\item
-  E.g. \href{https://tiroshlab.github.io/lab-book/contact.html}{Chapter
-  3 Lab members and contact details}
-\end{itemize}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
+  \begin{itemize}
+  \tightlist
+  \item
+    E.g.
+    \href{https://tiroshlab.github.io/lab-book/contact.html}{Chapter 3
+    Lab members and contact details}
+  \end{itemize}
 \item
   Click on the edit icon at the top of the website page.
 \item
   Make your edits and submit them (green button at the bottom of the
   page).
-\item
-  If you do not have a Github account, wait a short while for your edit
-  to be accepted. :)
 \end{enumerate}
 
-\subsection{Option 2: computational}\label{option-2-computational}
+\subsection{Option 2}\label{option-2}
 
 \textbf{Note}: this will only work for those whose Github users have
 been added to the book repository.
@@ -229,31 +225,25 @@ been added to the book repository.
   \end{itemize}
 \item
   Make and save the relevant changes to the .Rmd file in question.
-\end{enumerate}
 
-\begin{itemize}
-\tightlist
-\item
-  There is one .Rmd file per chapter.
-\end{itemize}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
+  \begin{itemize}
+  \tightlist
+  \item
+    There is one .Rmd file per chapter.
+  \end{itemize}
 \item
   Submit the edit. In the terminal type:
-\end{enumerate}
 
-\begin{itemize}
-\tightlist
-\item
-  \texttt{git\ commit\ -am\ \textless{}myShortMessage\textgreater{}}
-\item
-  \texttt{git\ pull\ origin\ master}
-\item
-  \texttt{git\ push\ origin\ master}
-\end{itemize}
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{git\ commit\ -am\ \textless{}myShortMessage\textgreater{}}
+  \item
+    \texttt{git\ pull\ origin\ master}
+  \item
+    \texttt{git\ push\ origin\ master}
+  \end{itemize}
+\end{enumerate}
 
 \section{Book formats}\label{book-formats}
 

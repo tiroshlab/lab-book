@@ -110,8 +110,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#fun"><i class="fa fa-check"></i><b>1.1.2</b> Fun</a></li>
 </ul></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#adding-to-the-book"><i class="fa fa-check"></i><b>1.2</b> Adding to the book</a><ul>
-<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#option-1-non-computational"><i class="fa fa-check"></i><b>1.2.1</b> Option 1: non-computational</a></li>
-<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#option-2-computational"><i class="fa fa-check"></i><b>1.2.2</b> Option 2: computational</a></li>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#option-1"><i class="fa fa-check"></i><b>1.2.1</b> Option 1</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#option-2"><i class="fa fa-check"></i><b>1.2.2</b> Option 2</a></li>
 </ul></li>
 <li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#book-formats"><i class="fa fa-check"></i><b>1.3</b> Book formats</a></li>
 </ul></li>
@@ -242,23 +242,21 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="adding-to-the-book" class="section level2">
 <h2><span class="header-section-number">1.2</span> Adding to the book</h2>
-<p>Adding to the lab book is easy.</p>
-<div id="option-1-non-computational" class="section level3">
-<h3><span class="header-section-number">1.2.1</span> Option 1: non-computational</h3>
+<p>Adding to the lab book is easy. The only requirement is that you <a href="https://github.com/join?source=header-home">make a Github account</a>, which shouldn’t take more than a couple of minutes to do.</p>
+<p>Note that since the book is re-built with each edit made, <strong>you may have to wait a few minutes before your changes become visible</strong>.</p>
+<div id="option-1" class="section level3">
+<h3><span class="header-section-number">1.2.1</span> Option 1</h3>
 <ol style="list-style-type: decimal">
-<li>Go to the website chapter that you would like to edit.</li>
-</ol>
+<li>Go to the website chapter that you would like to edit.
 <ul>
 <li>E.g. <a href="https://tiroshlab.github.io/lab-book/contact.html">Chapter 3 Lab members and contact details</a></li>
-</ul>
-<ol start="2" style="list-style-type: decimal">
+</ul></li>
 <li>Click on the edit icon at the top of the website page.</li>
 <li>Make your edits and submit them (green button at the bottom of the page).</li>
-<li>If you do not have a Github account, wait a short while for your edit to be accepted. :)</li>
 </ol>
 </div>
-<div id="option-2-computational" class="section level3">
-<h3><span class="header-section-number">1.2.2</span> Option 2: computational</h3>
+<div id="option-2" class="section level3">
+<h3><span class="header-section-number">1.2.2</span> Option 2</h3>
 <p><strong>Note</strong>: this will only work for those whose Github users have been added to the book repository.</p>
 <ol style="list-style-type: decimal">
 <li>Go to your local clone of the repository.
@@ -266,19 +264,17 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li>to clone the repository: <code>git clone https://github.com/tiroshlab/lab-book.git</code><br />
 </li>
 </ul></li>
-<li>Make and save the relevant changes to the .Rmd file in question.</li>
-</ol>
+<li>Make and save the relevant changes to the .Rmd file in question.
 <ul>
 <li>There is one .Rmd file per chapter.</li>
-</ul>
-<ol start="3" style="list-style-type: decimal">
-<li>Submit the edit. In the terminal type:</li>
-</ol>
+</ul></li>
+<li>Submit the edit. In the terminal type:
 <ul>
 <li><code>git commit -am &lt;myShortMessage&gt;</code></li>
 <li><code>git pull origin master</code></li>
 <li><code>git push origin master</code></li>
-</ul>
+</ul></li>
+</ol>
 </div>
 </div>
 <div id="book-formats" class="section level2">
