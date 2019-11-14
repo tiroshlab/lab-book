@@ -70,7 +70,11 @@
 \newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
 \newcommand{\NormalTok}[1]{#1}
 \usepackage{longtable,booktabs}
-\usepackage{graphicx,grffile}
+\usepackage{graphicx}
+% grffile has become a legacy package: https://ctan.org/pkg/grffile
+\IfFileExists{grffile.sty}{%
+\usepackage{grffile}
+}{}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -122,7 +126,7 @@
     \preauthor{}\postauthor{}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{Last updated on 2019-11-08}
+    \date{Last updated on 2019-11-14}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -356,6 +360,10 @@ cancer).
   Noam Hadary,
   \href{mailto:noam.hadary@weizmann.ac.il}{\nolinkurl{noam.hadary@weizmann.ac.il}},
   052-4323212, Derech Yavne 63, apt. 14, Rehovot
+\item
+  Noam Galili,
+  \href{mailto:noam.galili@weizmann.ac.il}{\nolinkurl{noam.galili@weizmann.ac.il}},
+  054-3173130, Beit Tsuri 11, Tel Aviv
 \end{enumerate}
 
 \chapter{Specific Projects}\label{projects}
