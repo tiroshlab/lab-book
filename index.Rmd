@@ -16,16 +16,17 @@ description: "Help & guidelines for members of the Tirosh lab"
 ## Links
 
 ### Useful
-- [Dropbox home](https://www.dropbox.com/home/Tirosh%20Lab)  
-- [Lab publications](http://www.weizmann.ac.il/mcb/tirosh/publications-0)  
-- [Lab website](http://www.weizmann.ac.il/mcb/tirosh/)  
-- [Experimental protocols](https://www.dropbox.com/sh/javjoi26i5k5f6t/AADAX4RgSZUFuBwtS6TRE3wua?dl=0)  
+- [Lab Dropbox](https://www.dropbox.com/home/Tirosh%20Lab)  
+- [Lab GitHub (tiroshlab)](https://www.github.com/tiroshlab)  
+- [Lab Publications](http://www.weizmann.ac.il/mcb/tirosh/publications-0)  
+- [Lab Website](http://www.weizmann.ac.il/mcb/tirosh/)  
+- [Lab Experimental Protocols](https://www.dropbox.com/sh/javjoi26i5k5f6t/AADAX4RgSZUFuBwtS6TRE3wua?dl=0)  
 
 ### Fun
 - [Lab Twitter](https://twitter.com/tiroshlab)  
 - [Birthdays](https://www.dropbox.com/s/zwss5fg9rkoz7pp/lab%20bday%20list.xlsx?dl=0)  
-- [Lab members](http://www.weizmann.ac.il/mcb/tirosh/group-members)  
-- [Lab trip photos](http://www.weizmann.ac.il/mcb/tirosh/pictures)  
+- [Lab Members](http://www.weizmann.ac.il/mcb/tirosh/group-members)  
+- [Lab Pictures :)](http://www.weizmann.ac.il/mcb/tirosh/pictures)  
 
 ## Adding to the book
 Adding to the lab book is easy. The only requirement is that you [make a Github account](https://github.com/join?source=header-home), which shouldn't take more than a couple of minutes to do.
