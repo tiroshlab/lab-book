@@ -2,7 +2,7 @@
 
 
 1. Ordering (scientific, food)
-	+ warehouse orders & office supplies - Alissa + Rony
+	+ warehouse orders & office supplies - Alissa
 	+ milk & machonkolet
 	+ coffee & coffee machine supplies
 
@@ -16,7 +16,7 @@
 4. Equipment/reagents maintenance
 	+ autoclave - preparation of materials (eppendorfs, Pasteur pipettes, H20) and transporting to/from autoclave on 3rd 	      floor
 	+ waste disposal - bringing chemical and biological waste to the waste disposal closet (and replacing with new  
-	bags/containers), emptying vacuum traps in tissue culture and main lab and refilling with bleach - Rony
+	bags/containers), emptying vacuum traps in tissue culture and main lab and refilling with bleach
 	+ tissue culture maintenance - replacing water pans in the incubators and treating with Aquaguard (biweekly to 	
 	monthly), replacing water in the water bath and treating with Aquaguard (monthly), autoclaving incubator racks (bi-	   annually), disinfection in case of a contamination, keeping the tissue culture room stocked with supplies - Alissa
 	+ aliquoting of common reagents - aliquoting FBS, pen-strep, glutamine, Aquaguard 1&2 on a regular basis for the 	  whole lab and keeping these reagents in stock - Alissa
@@ -26,7 +26,7 @@
 	- Julie
 	- Avishay
 
-6. Lab organization/setup (esp. including when moving to the new building) - Alissa + Rony
+6. Lab organization/setup (esp. including when moving to the new building) - Alissa
 
 7. Lab safety - Alissa
 
