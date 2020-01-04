@@ -239,10 +239,10 @@ compute node: <code>ssh &lt;username&gt;@cn077.wexac.weizmann.ac.il</code></p>
 <p>If you are running something that requires substantial memory/time, you should submit this as a job to one of the queues on WEXAC (or sit back and wait to receive a call from HPC).</p>
 <p>To name a few queues:<br />
 <code>tirosh</code><br />
-<code>new-short</code><br />
-<code>new-medium</code><br />
-<code>new-long</code><br />
-<code>new-all</code></p>
+<code>new-short.q</code><br />
+<code>new-medium.q</code><br />
+<code>new-long.q</code><br />
+<code>new-all.q</code></p>
 <p>Which queue you choose can depend on a number of things: job duration &amp; memory requirements, how busy a queue is and which compute node it is associated with. For example, the <code>tirosh</code> queue runs jobs on <code>cn077</code>. Since <code>cn077</code> is private, the queue is not busy (relatively speaking) and your job may start running sooner. On the other hand since <code>cn077</code> only has 1 core, a computationally-intensive job may finish more slowly than on a queue with multiple cores.</p>
 <p>For more information on available queues:<br />
 <code>bqueues -a</code></p>

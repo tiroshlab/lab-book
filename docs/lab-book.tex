@@ -107,12 +107,6 @@
 \def\fps@figure{htbp}
 \makeatother
 
-\usepackage{etoolbox}
-\makeatletter
-\providecommand{\subtitle}[1]{% add subtitle to \maketitle
-  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
-}
-\makeatother
 \usepackage{booktabs}
 \usepackage{amsthm}
 \makeatletter
@@ -121,25 +115,10 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
-% https://github.com/rstudio/rmarkdown/issues/337
-\let\rmarkdownfootnote\footnote%
-\def\footnote{\protect\rmarkdownfootnote}
-
-% https://github.com/rstudio/rmarkdown/pull/252
-\usepackage{titling}
-\setlength{\droptitle}{-2em}
-
-\pretitle{\vspace{\droptitle}\centering\huge}
-\posttitle{\par}
-
-\preauthor{\centering\large\emph}
-\postauthor{\par}
-
-\predate{\centering\large\emph}
-\postdate{\par}
 
 \title{Tirosh Lab Book}
-\date{Last updated on 2019-12-12}
+\author{}
+\date{\vspace{-2.5em}Last updated on 2020-01-04}
 
 \begin{document}
 \maketitle
@@ -1146,10 +1125,10 @@ and wait to receive a call from HPC).
 
 To name a few queues:\\
 \texttt{tirosh}\\
-\texttt{new-short}\\
-\texttt{new-medium}\\
-\texttt{new-long}\\
-\texttt{new-all}
+\texttt{new-short.q}\\
+\texttt{new-medium.q}\\
+\texttt{new-long.q}\\
+\texttt{new-all.q}
 
 Which queue you choose can depend on a number of things: job duration \&
 memory requirements, how busy a queue is and which compute node it is
