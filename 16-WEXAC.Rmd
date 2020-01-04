@@ -30,10 +30,10 @@ If you are running something that requires substantial memory/time, you should s
 
 To name a few queues:  
 `tirosh`  
-`new-short`  
-`new-medium`  
-`new-long`  
-`new-all`
+`new-short.q`  
+`new-medium.q`  
+`new-long.q`  
+`new-all.q`
 
 Which queue you choose can depend on a number of things: job duration & memory requirements, how busy a queue is and which compute node it is associated with. For example, the `tirosh` queue runs jobs on `cn077`. Since `cn077` is private, the queue is not busy (relatively speaking) and your job may start running sooner. On the other hand since `cn077` only has 1 core, a computationally-intensive job may finish more slowly than on a queue with multiple cores.
 
