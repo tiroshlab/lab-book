@@ -2,8 +2,6 @@ homepage
 links
 useful
 fun
-option-1
-option-2
 book-formats
 ith-mechanisms
 approach

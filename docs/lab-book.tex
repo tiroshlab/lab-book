@@ -175,8 +175,8 @@ Adding to the lab book is easy. The only requirement is that you \href{https://g
 
 Note that since the book is re-built with each edit made, \textbf{you may have to wait a few minutes before your changes become visible}.
 
-\hypertarget{option-1}{%
-\subsection{Option 1}\label{option-1}}
+\hypertarget{option-1-edit-via-the-book-website-recommended}{%
+\subsection{Option 1: Edit via the book website (recommended)}\label{option-1-edit-via-the-book-website-recommended}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -195,8 +195,28 @@ Note that since the book is re-built with each edit made, \textbf{you may have t
   Make your edits and submit them (green button at the bottom of the page).
 \end{enumerate}
 
-\hypertarget{option-2}{%
-\subsection{Option 2}\label{option-2}}
+\hypertarget{option-2-edit-via-the-github-website}{%
+\subsection{Option 2: Edit via the GitHub website}\label{option-2-edit-via-the-github-website}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Go to the chapter file that you would like to edit.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    E.g. \href{https://github.com/tiroshlab/lab-book/blob/master/02-labMembersContact.Rmd}{02-labMembersContact.Rmd}
+  \end{itemize}
+\item
+  Click on the edit icon.
+\item
+  Make your edits and submit them by clicking the green \textbf{Commit changes} button.
+\end{enumerate}
+
+\hypertarget{option-3-edit-using-the-git-command-line-interface}{%
+\subsection{Option 3: Edit using the git command line interface}\label{option-3-edit-using-the-git-command-line-interface}}
 
 \textbf{Note}: this will only work for those whose Github users have been added to the book repository.
 
@@ -232,6 +252,17 @@ Note that since the book is re-built with each edit made, \textbf{you may have t
     \texttt{git\ push\ origin\ master}
   \end{itemize}
 \end{enumerate}
+
+\hypertarget{additional-links}{%
+\subsection{Additional links}\label{additional-links}}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://tiroshlab.github.io/lab-book/labGitHub.html\#the-lab-book-repository}{Section 18.4: The lab book repository}
+\item
+  \href{https://bookdown.org/yihui/rmarkdown-cookbook/}{Guide to writing in R Markdown}
+\end{itemize}
 
 \hypertarget{book-formats}{%
 \section{Book formats}\label{book-formats}}
@@ -780,7 +811,7 @@ where \texttt{X} is the (minimum) amount of memory you want to allocate, up to 1
 \hypertarget{labGitHub}{%
 \chapter{Lab GitHub Account}\label{labGitHub}}
 
-The lab has a shared github account called \texttt{tiroshlab} \href{https://github.com/tiroshlab}{(link to webpage)}. This allows an unlimited number of us to collaborate on multiple projects (also known as \emph{repositories}) at once, and also provides a page to which non-lab-members can navigate to see, download or contribute (upon request) to our code.
+The lab has a shared github account called \texttt{tiroshlab} \href{https://github.com/tiroshlab}{(GitHub Repo)}. This allows an unlimited number of us to collaborate on multiple projects (also known as \emph{repositories}) at once, and also provides a page to which non-lab-members can navigate to see, download or contribute (upon request) to our code.
 
 \hypertarget{how-do-i-join}{%
 \section{How do I join?}\label{how-do-i-join}}
@@ -792,8 +823,8 @@ To become a member of the account, you should send your GitHub username to Julie
 
 \texttt{tiroshlab} is an organization account: like personal accounts, organizations can own resources such as repositories, packages, and projects. However, \textbf{you cannot sign into an organization.} Instead, \textbf{each person signs into their own personal account, and any actions the person takes on organization resources are attributed to their personal account.} Each personal account can be a member of multiple organizations.
 
-\hypertarget{additional-links}{%
-\subsection{Additional links}\label{additional-links}}
+\hypertarget{additional-links-1}{%
+\subsection{Additional links}\label{additional-links-1}}
 
 \begin{itemize}
 \tightlist
@@ -814,17 +845,22 @@ To become a member of the account, you should send your GitHub username to Julie
 \begin{itemize}
 \tightlist
 \item
-  To add a new repository, navigate to the \texttt{tiroshlab} GitHub page \href{https://github.com/tiroshlab}{(link)}, and click the green button ``New''.
+  To add a new repository, navigate to the \texttt{tiroshlab} \href{https://github.com/tiroshlab}{GitHub Repo}, and click the green \textbf{New} button.
 \item
   To make changes to an existing repository, navigate to the GitHub page in question (e.g.~\href{https://github.com/tiroshlab/3ca}{3CA project}) and use the icons to add files or open existing files.
-  \#\#\# Option 2: Using the git command line interface
-  Proceed as you would for any other git repository, and using your personal git credentials to push/pull commits to the \texttt{tiroshlab} repository.
 \end{itemize}
 
-\hypertarget{how-do-i-add-or-edit-the-lab-book}{%
-\section{How do I add or edit the lab book?}\label{how-do-i-add-or-edit-the-lab-book}}
+\hypertarget{option-2-using-the-git-command-line-interface}{%
+\subsection{Option 2: Using the git command line interface}\label{option-2-using-the-git-command-line-interface}}
 
-The lab book is one of the GitHub repositories on the \texttt{tiroshlab} account \href{https://github.com/tiroshlab/lab-book}{(link to GitHub page)}. \href{https://tiroshlab.github.io/lab-book/}{(link to website)}. Therefore, broadly speaking, you can add or edit it as you would any other repository. However, we also built the book as a website, and this form is perhaps the easiest to make small edits to. See \href{https://tiroshlab.github.io/lab-book/index.html\#adding-to-the-book}{Section 1.2: Adding to the book} for more details.
+Proceed as you would for any other git repository, using your personal git credentials to push/pull commits to the \texttt{tiroshlab} repository.
+
+\hypertarget{the-lab-book-repository}{%
+\section{The lab book repository}\label{the-lab-book-repository}}
+
+The lab book is one of the GitHub repositories on the \texttt{tiroshlab} account \href{https://github.com/tiroshlab/lab-book}{(GitHub Repo)}. Therefore, you can add or edit it as you would any other repository. However, we also build the lab book as a website using GitHub pages \href{https://tiroshlab.github.io/lab-book/}{(Website)}. The Github Repo and the Website are synced, so it doesn't matter which `form' of the lab book you make your edits to.
+
+See \href{https://tiroshlab.github.io/lab-book/index.html\#adding-to-the-book}{Section 1.2: Adding to the book} for step-by-step instructions on adding to the book.
 
   \bibliography{book.bib,packages.bib}
 
