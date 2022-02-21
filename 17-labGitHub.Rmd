@@ -13,7 +13,7 @@ To become a member of the account, you should send your GitHub username to Julie
 ### Additional links
 - [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts)
 - [Committing code to an organization repo](https://stackoverflow.com/questions/35745358/can-a-github-organization-commit-code-to-a-repository)
-- [Commit on behalf of an organization](Creating a commit on behalf of an organization)
+- [Committing on behalf of an organization](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-on-behalf-of-an-organization)
 
 
 ## How do I add or edit a repository?
