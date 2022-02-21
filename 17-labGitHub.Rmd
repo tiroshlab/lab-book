@@ -1,6 +1,6 @@
 # Lab GitHub Account {#labGitHub}
 
-The lab has a shared github account called `tiroshlab` [(link to webpage)](https://github.com/tiroshlab). This allows an unlimited number of us to collaborate on multiple projects (also known as *repositories*) at once, and also provides a page to which non-lab-members can navigate to see, download or contribute (upon request) to our code.
+The lab has a shared github account called `tiroshlab` [(GitHub Repo)](https://github.com/tiroshlab). This allows an unlimited number of us to collaborate on multiple projects (also known as *repositories*) at once, and also provides a page to which non-lab-members can navigate to see, download or contribute (upon request) to our code.
 
 
 ## How do I join?
@@ -18,12 +18,15 @@ To become a member of the account, you should send your GitHub username to Julie
 
 ## How do I add or edit a repository?
 ### Option 1: Using the GitHub website
-- To add a new repository, navigate to the `tiroshlab` GitHub page [(link)](https://github.com/tiroshlab), and click the green button "New".
+- To add a new repository, navigate to the `tiroshlab` [GitHub Repo](https://github.com/tiroshlab), and click the green **New** button.
 - To make changes to an existing repository, navigate to the GitHub page in question (e.g. [3CA project](https://github.com/tiroshlab/3ca)) and use the icons to add files or open existing files.
+
 ### Option 2: Using the git command line interface
-Proceed as you would for any other git repository, and using your personal git credentials to push/pull commits to the `tiroshlab` repository.
+Proceed as you would for any other git repository, using your personal git credentials to push/pull commits to the `tiroshlab` repository.
 
 
-## How do I add or edit the lab book?
-The lab book is one of the GitHub repositories on the `tiroshlab` account [(link to GitHub page)](https://github.com/tiroshlab/lab-book). [(link to website)](https://tiroshlab.github.io/lab-book/). Therefore, broadly speaking, you can add or edit it as you would any other repository. However, we also built the book as a website, and this form is perhaps the easiest to make small edits to. See [Section 1.2: Adding to the book](https://tiroshlab.github.io/lab-book/index.html#adding-to-the-book) for more details. 
+## The lab book repository
+The lab book is one of the GitHub repositories on the `tiroshlab` account [(GitHub Repo)](https://github.com/tiroshlab/lab-book). Therefore, you can add or edit it as you would any other repository. However, we also build the lab book as a website using GitHub pages [(Website)](https://tiroshlab.github.io/lab-book/). The Github Repo and the Website are synced, so it doesn't matter which 'form' of the lab book you make your edits to. 
+
+See [Section 1.2: Adding to the book](https://tiroshlab.github.io/lab-book/index.html#adding-to-the-book) for step-by-step instructions on adding to the book.
 

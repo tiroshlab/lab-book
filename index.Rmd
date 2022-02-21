@@ -27,18 +27,25 @@ description: "Help & guidelines for members of the Tirosh lab"
 - [Lab members](http://www.weizmann.ac.il/mcb/tirosh/group-members)  
 - [Lab trip photos](http://www.weizmann.ac.il/mcb/tirosh/pictures)  
 
+
 ## Adding to the book
-Adding to the lab book is easy. The only requirement is that you [make a Github account](https://github.com/join?source=header-home), which shouldn't take more than a couple of minutes to do.
+Adding to the lab book is easy. The only requirement is that you [make a Github account](https://github.com/join?source=header-home), which shouldn't take more than a couple of minutes to do. 
 
 Note that since the book is re-built with each edit made, **you may have to wait a few minutes before your changes become visible**.
 
-### Option 1
+### Option 1: Edit via the book website (recommended)
 1. Go to the website chapter that you would like to edit.
     + E.g. [Chapter 3 Lab members and contact details](https://tiroshlab.github.io/lab-book/contact.html)
 2. Click on the edit icon at the top of the website page.
 3. Make your edits and submit them (green button at the bottom of the page).
 
-### Option 2
+### Option 2: Edit via the GitHub website
+1. Go to the chapter file that you would like to edit.
+   + E.g. [02-labMembersContact.Rmd](https://github.com/tiroshlab/lab-book/blob/master/02-labMembersContact.Rmd)
+2. Click on the edit icon.
+3. Make your edits and submit them by clicking the green **Commit changes** button.
+ 
+### Option 3: Edit using the git command line interface
 **Note**: this will only work for those whose Github users have been added to the book repository.
 
 1. Go to your local clone of the repository.
@@ -50,8 +57,14 @@ Note that since the book is re-built with each edit made, **you may have to wait
     + `git pull origin master`
     + `git push origin master`
 
+
+### Additional links
+- [Section 18.4: The lab book repository](https://tiroshlab.github.io/lab-book/labGitHub.html#the-lab-book-repository)
+- [Guide to writing in R Markdown](https://bookdown.org/yihui/rmarkdown-cookbook/)
+
+
 ## Book formats
-The default book is a [website](https://tiroshlab.github.io/lab-book). You can also choose to download the book as PDF or ebook. To do this, click the download icon at the top of the website page. 
+The default book is a [website](https://tiroshlab.github.io/lab-book). You can also choose to download the book as PDF or ebook. To do this, click the download icon at the top of the website page.
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
