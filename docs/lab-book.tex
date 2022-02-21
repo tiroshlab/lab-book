@@ -18,11 +18,12 @@
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 % use microtype if available
 \IfFileExists{microtype.sty}{%
-\usepackage{microtype}
+\usepackage[]{microtype}
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\usepackage{hyperref}
-\hypersetup{unicode=true,
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
             pdftitle={Tirosh Lab Book},
             pdfborder={0 0 0},
             breaklinks=true}
@@ -70,6 +71,8 @@
 \newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
 \newcommand{\NormalTok}[1]{#1}
 \usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -99,30 +102,10 @@
 \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
 
-%%% Use protect on footnotes to avoid problems with footnotes in titles
-\let\rmarkdownfootnote\footnote%
-\def\footnote{\protect\rmarkdownfootnote}
-
-%%% Change title format to be more compact
-\usepackage{titling}
-
-% Create subtitle command for use in maketitle
-\providecommand{\subtitle}[1]{
-  \posttitle{
-    \begin{center}\large#1\end{center}
-    }
-}
-
-\setlength{\droptitle}{-2em}
-
-  \title{Tirosh Lab Book}
-    \pretitle{\vspace{\droptitle}\centering\huge}
-  \posttitle{\par}
-    \author{}
-    \preauthor{}\postauthor{}
-      \predate{\centering\large\emph}
-  \postdate{\par}
-    \date{2019-11-06}
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -132,6 +115,10 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
+
+\title{Tirosh Lab Book}
+\author{}
+\date{\vspace{-2.5em}Last updated on 2020-01-07}
 
 \begin{document}
 \maketitle
@@ -144,21 +131,28 @@
 
 \section{Links}\label{links}
 
-YOOOOO \#\#\# Useful -
-\href{https://www.dropbox.com/home/Tirosh\%20Lab}{Dropbox home}\\
-- \href{http://www.weizmann.ac.il/mcb/tirosh/publications-0}{Lab
-publications}\\
-- \href{http://www.weizmann.ac.il/mcb/tirosh/}{Lab website}\\
--
-\href{https://www.dropbox.com/sh/javjoi26i5k5f6t/AADAX4RgSZUFuBwtS6TRE3wua?dl=0}{Experimental
-protocols}
+\subsection{Useful}\label{useful}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.dropbox.com/home/Tirosh\%20Lab}{Dropbox home}\\
+\item
+  \href{http://www.weizmann.ac.il/mcb/tirosh/publications-0}{Lab
+  publications}\\
+\item
+  \href{http://www.weizmann.ac.il/mcb/tirosh/}{Lab website}\\
+\item
+  \href{https://www.dropbox.com/sh/javjoi26i5k5f6t/AADAX4RgSZUFuBwtS6TRE3wua?dl=0}{Experimental
+  protocols}
+\end{itemize}
 
 \subsection{Fun}\label{fun}
 
 \begin{itemize}
 \tightlist
 \item
-  \href{https://twitter.com/tiroshlab?lang=bg}{Lab Twitter}\\
+  \href{https://twitter.com/tiroshlab}{Lab Twitter}\\
 \item
   \href{https://www.dropbox.com/s/zwss5fg9rkoz7pp/lab\%20bday\%20list.xlsx?dl=0}{Birthdays}\\
 \item
@@ -170,40 +164,36 @@ protocols}
 
 \section{Adding to the book}\label{adding-to-the-book}
 
-Adding to the lab book is easy.
+Adding to the lab book is easy. The only requirement is that you
+\href{https://github.com/join?source=header-home}{make a Github
+account}, which shouldn't take more than a couple of minutes to do.
 
-\subsection{Option 1:
-non-computational}\label{option-1-non-computational}
+Note that since the book is re-built with each edit made, \textbf{you
+may have to wait a few minutes before your changes become visible}.
+
+\subsection{Option 1}\label{option-1}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
   Go to the website chapter that you would like to edit.
-\end{enumerate}
 
-\begin{itemize}
-\tightlist
-\item
-  E.g. \href{https://jlaffy.github.io/lab-book/contact.html}{Chapter 3
-  Lab members and contact details}
-\end{itemize}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
+  \begin{itemize}
+  \tightlist
+  \item
+    E.g.
+    \href{https://tiroshlab.github.io/lab-book/contact.html}{Chapter 3
+    Lab members and contact details}
+  \end{itemize}
 \item
   Click on the edit icon at the top of the website page.
 \item
   Make your edits and submit them (green button at the bottom of the
   page).
-\item
-  If you do not have a Github account, wait a short while for your edit
-  to be accepted. :)
 \end{enumerate}
 
-\subsection{Option 2: computational}\label{option-2-computational}
+\subsection{Option 2}\label{option-2}
 
 \textbf{Note}: this will only work for those whose Github users have
 been added to the book repository.
@@ -218,41 +208,36 @@ been added to the book repository.
   \tightlist
   \item
     to clone the repository:
-    \texttt{git\ clone\ https://github.com/jlaffy/lab-book.git}\\
+    \texttt{git\ clone\ https://github.com/tiroshlab/lab-book.git}\\
   \end{itemize}
 \item
   Make and save the relevant changes to the .Rmd file in question.
-\end{enumerate}
 
-\begin{itemize}
-\tightlist
-\item
-  There is one .Rmd file per chapter.
-\end{itemize}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
+  \begin{itemize}
+  \tightlist
+  \item
+    There is one .Rmd file per chapter.
+  \end{itemize}
 \item
   Submit the edit. In the terminal type:
-\end{enumerate}
 
-\begin{itemize}
-\tightlist
-\item
-  \texttt{git\ commit\ -am\ \textless{}myShortMessage\textgreater{}}
-\item
-  \texttt{git\ pull\ origin\ master}
-\item
-  \texttt{git\ push\ origin\ master}
-\end{itemize}
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{git\ commit\ -am\ \textless{}myShortMessage\textgreater{}}
+  \item
+    \texttt{git\ pull\ origin\ master}
+  \item
+    \texttt{git\ push\ origin\ master}
+  \end{itemize}
+\end{enumerate}
 
 \section{Book formats}\label{book-formats}
 
-The default book is a \href{https://jlaffy.github.io/lab-book}{website}.
-You can also choose to download the book as PDF or ebook. To do this,
-click the download icon at the top of the website page.
+The default book is a
+\href{https://tiroshlab.github.io/lab-book}{website}. You can also
+choose to download the book as PDF or ebook. To do this, click the
+download icon at the top of the website page.
 
 \chapter{General research directions of the lab}\label{general}
 
@@ -358,6 +343,10 @@ cancer).
   Noam Hadary,
   \href{mailto:noam.hadary@weizmann.ac.il}{\nolinkurl{noam.hadary@weizmann.ac.il}},
   052-4323212, Derech Yavne 63, apt. 14, Rehovot
+\item
+  Noam Galili,
+  \href{mailto:noam.galili@weizmann.ac.il}{\nolinkurl{noam.galili@weizmann.ac.il}},
+  054-3173130, Beit Tsuri 11, Tel Aviv
 \end{enumerate}
 
 \chapter{Specific Projects}\label{projects}
@@ -401,6 +390,11 @@ subpopulations of cancer cells that exist in different glioma types, 2)
 understand the emergence of these subpopulations as a function of cell
 lineage, genetics and the TME and 3) revisit the distinctions between
 glioma types.
+
+\textbf{Noam G}\\
+My project focuses on deconvolution of bulk RNA-seq data to identify and
+distinguish IFN response and MHC class ii genes in cancer cells from
+immune cells.
 
 \chapter{Joining and Leaving protocol}\label{joiningLeaving}
 
@@ -469,46 +463,30 @@ When leaving the group:
 
 \chapter{Lab Responsibilities}\label{labResponsibilities}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Ordering (scientific, food)
-\item
-  Group meetings and journal club organization.
+Experimental-related: (Alissa, Rony, Rotem, Debdatta) 1. Warehouse
+orders -- Alissa \& Rony 2. Equipment/reagents maintenance: +Autoclave -
+preparation of materials (eppendorfs, Pasteur pipettes, H20) and
+transporting to/from autoclave on 3rd floor - Rotem +Waste disposal -
+bringing chemical and biological waste to the waste disposal closet (and
+replacing with new bags/containers), emptying vacuum traps in tissue
+culture and main lab and refilling with bleach - Debdatta +Tissue
+culture maintenance - replacing water pans in the incubators and
+treating with Aquaguard (biweekly to monthly), replacing water in the
+water bath and treating with Aquaguard (monthly), autoclaving incubator
+racks (bi-annually), disinfection in case of a contamination, keeping
+the tissue culture room stocked with supplies -- Rony +Aliquoting of
+common reagents - aliquoting FBS, pen-strep, glutamine, Aquaguard 1\&2
+on a regular basis for the whole lab and keeping these reagents in stock
+-- Debdatta +Keeping common consumables and reagents in stock - Rotem 3.
+Lab organization/setup (esp. including when moving to the new building)
+- Alissa 4. Lab safety - Alissa
 
-  \begin{itemize}
-  \tightlist
-  \item
-    Julie
-  \item
-    Mike
-  \end{itemize}
-\item
-  Lab trip and lab week organization
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Rony
-  \end{itemize}
-\item
-  Equipment/reagents maintenance
-\item
-  Lab code
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Julie
-  \item
-    Avishay
-  \end{itemize}
-\item
-  Lab organization/setup (esp. including when moving to the new
-  building)
-\item
-  Anything else I didn't consider
-\end{enumerate}
+Non-experimental: (Julie, Avishay, Mike, Michael, Noam H, Noam G) 5.
+Ordering office supplies - Noam H/Noam G/Michael 6. Milk \& machonkolet
+-- Avishay \& Noam H/Noam G/Michael 7. Coffee machine supplies and
+maintenance - Noam H/Noam G/Michael 8. Group meetings - Julie 9. journal
+club organization -- Mike 10. Lab trip organization: Noam H \& Michael
+11. Lab code -- Julie \& Avishay 12. Lab data -- Mike \& Noam G
 
 \chapter{Shared Data}\label{sharedData}
 
@@ -1147,10 +1125,10 @@ and wait to receive a call from HPC).
 
 To name a few queues:\\
 \texttt{tirosh}\\
-\texttt{new-short}\\
-\texttt{new-medium}\\
-\texttt{new-long}\\
-\texttt{new-all}
+\texttt{new-short.q}\\
+\texttt{new-medium.q}\\
+\texttt{new-long.q}\\
+\texttt{new-all.q}
 
 Which queue you choose can depend on a number of things: job duration \&
 memory requirements, how busy a queue is and which compute node it is
@@ -1182,6 +1160,5 @@ given in \texttt{bjobs} output.\\
 \texttt{bsub}.
 
 \bibliography{book.bib,packages.bib}
-
 
 \end{document}
