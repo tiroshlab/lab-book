@@ -1,0 +1,20 @@
+# Lab GitHub Account {#labGitHub}
+
+The lab has a shared github account called `tiroshlab` [(link to webpage)](https://github.com/tiroshlab). This allows an unlimited number of us to collaborate on multiple projects at once, and also provides a page to which non-lab-members can navigate to see, download or contribute (upon request) to our code.
+
+
+## What is an "Organization account" and how do I use it?
+`tiroshlab` is an organization account. Like personal accounts, organizations can own resources such as repositories, packages, and projects. *However, you cannot sign into an organization. Instead, each person signs into their own personal account, and any actions the person takes on organization resources are attributed to their personal account.* Each personal account can be a member of multiple organizations.
+
+More info:
+- [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts)
+- [Creating a commit on behalf of an organization](Creating a commit on behalf of an organization)
+
+
+## How do I join the account?
+To become a member of the account, you should send your GitHub username to Julie (julie.laffy@weizmann.ac.il) or to Mike (michael.tyler@weizmann.ac.il). If you don't have a personal account, you should first sign up at [this link](https://github.com/signup). Once you're added, you'll be able to easily make changes to existing projects or add new ones.
+
+
+## The lab book
+The lab book is one of the GitHub projects on our account [(link to GitHub page)](https://github.com/tiroshlab/lab-book) [(link to website)](https://tiroshlab.github.io/lab-book/). It is written in R Markdown, and adding to it is very easy (see [Section 1.2: Adding to the book](https://tiroshlab.github.io/lab-book/index.html#adding-to-the-book)).
+
