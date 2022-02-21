@@ -15,7 +15,7 @@ description: "Help & guidelines for members of the Tirosh lab"
 
 ## Links
 
-### Useful test
+### Useful
 - [Dropbox home](https://www.dropbox.com/home/Tirosh%20Lab)  
 - [Lab publications](http://www.weizmann.ac.il/mcb/tirosh/publications-0)  
 - [Lab website](http://www.weizmann.ac.il/mcb/tirosh/)  
