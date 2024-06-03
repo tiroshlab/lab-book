@@ -3,8 +3,8 @@
 ## Joining
 When joining the group:
 
-1. Ask Michal Ovadia to pool your userID to this department and connect you to any services you may need to use (at least WEXAC and email will be necessary, and RSA very useful), note, if you have userID in other department, pooling you will erase your old server folder. 
-2. Ask Michal to add you to the lab dropbox.
+1. Ask Yael Lepek to pool your userID to this department and connect you to any services you may need to use (at least WEXAC and email will be necessary, and RSA very useful), note, if you have userID in other department, pooling you will erase your old server folder. 
+2. Ask Yael to add you to the lab dropbox.
 3. Order a computer – available options are found at the [DIS site](http://www.weizmann.ac.il/DIS/computing-hardware/pc/windows-laptops)
 Check with Itay before ordering.
 4. Natali Yikne is the one that supplies network cable, opens the network connection point near to your desk and makes your registration to the internet - for that, you will have to supply your ETHERNET code (found on the Ethernet outlet) and the computer’s MAC address.
@@ -19,7 +19,7 @@ When leaving the group:
 
 1. Make sure to return all your computer accessories (docking station, charger, mouse, keyboard etc)
 2. Make sure to back up your code, results and data, as your folder will be erased.
-3. Talk to Michal to remove you from services.
-4. Return your badge to Michal when you leave.
+3. Talk to Yael to remove you from services.
+4. Return your badge to Yael when you leave.
 5. Notify Natali whether you possess Weizmann laptop and accessories and who will get that after you.
 
