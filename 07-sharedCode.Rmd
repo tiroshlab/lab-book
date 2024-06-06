@@ -3,6 +3,18 @@
 The aim of the shared code is to implement the lab’s core ideas on analysis of scRNA-seq data. The code is written in R and is publicly available via GitHub (see below). It was designed with a modular approach and hence is separated into several well-defined packages. The packages and functions are well documented and examples are provided within each package.
 
 ## About the R packages
+
+### `scalop` 
+[Website] (https://rdrr.io/github/jlaffy/scalop/)
+
+_**A toolbox for single-cell analysis.**_
+
+To install in R:  
+```{r, eval=FALSE}
+install.packages("remotes")
+remotes::install_github("jlaffy/scalop")
+```
+
 ### `scandal`
 [Source code](https://github.com/dravishays/scandal) | [Report bugs](https://github.com/dravishays/scandal/issues)
 
