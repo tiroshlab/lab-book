@@ -1,4 +1,7 @@
 # Joining and Leaving protocol {#joiningLeaving}
+The two admin coordinators for our department sit on floor 0 of the Wolfson Building.
+They are Yael Lepek (x4072) and Michal Ovadia (x4071). Both of them are very helpful:) Yael is the admin coordinator assigned to our lab.
+Other important people to know: Natali Yikne (x4010) in charge of purchasing and Amit Maor (x2884) in charge of building and maintenance-related things.
 
 ## Joining
 When joining the group:
@@ -7,12 +10,13 @@ When joining the group:
 2. Ask Yael to add you to the lab dropbox.
 3. Order a computer – available options are found at the [DIS site](http://www.weizmann.ac.il/DIS/computing-hardware/pc/windows-laptops)
 Check with Itay before ordering.
-4. Natali Yikne is the one that supplies network cable, opens the network connection point near to your desk and makes your registration to the internet - for that, you will have to supply your ETHERNET code (found on the Ethernet outlet) and the computer’s MAC address.
+4. Natali Yikne supplies the network cable, opens the network connection point near to your desk and makes your registration to the internet - for that, you will have to supply your ETHERNET code (found on the Ethernet outlet) and the computer’s MAC address.
 5. Ask Itay to get the lab google calendar so you can update and know future plans. 
 6. If you’re a foreigner, go to the FGS for help to set up banking and insurance.
 7. Also as a foreigner you can [arrange housing through the visiting scientist centre](http://www.weizmann.ac.il/vs/).
-8. Provide your bank account to Michal so you can get paid.
+8. Provide your bank account to Yael so you can get paid.
 9. After registering you will get emails about doing a medical checkup, lab safety introduction and having your photo taken so you can get a Weizmann badge.
+10. Instructions for setting up EVPN so that you can access the server and other Weizmann resources remotely can be found here: https://www.weizmann.ac.il/WIT/remote-connection-f5-client-vpn-windows-10
 
 ## Leaving
 When leaving the group:
