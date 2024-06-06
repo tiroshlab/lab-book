@@ -1,4 +1,11 @@
 # Lab Responsibilities {#labResponsibilities}
+This is mostly out-of-date and will be updated once we re-delegate lab responsibilities. 
+However, a few things that are current (as of June 2024):
+coffee machine - Dor & Rotem
+Shufersal orders - Noam
+WEXAC/server-related - Daniel K
+journal club - Alissa
+ordering - Alissa
 
 Experimental-related:
 (Alissa, Rony, Rotem, Debdatta)
