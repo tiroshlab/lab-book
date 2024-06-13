@@ -58,5 +58,67 @@ To install in R:
 devtools::install_github("jlaffy/scrabble")
 ```
 
+## R-code best practices
+
+### General
+
+_**Reproducibility**_ - multiple runs of the same code should produce the same results. use `set.seed(0)` before commands with random elements.
+
+_**Project**_ - R project, that contains multiple files, has the advantages of better code orgainzation, GIT support, ect...
+
+_***.rmd files**_ - prefer using R markdown (*.rmd) files instead of *.R files, as the former enable to separate code into subsets (called chunks), provide each chunk with a title, which enable better navigation between analysis sections
+
+Understand the code you are writing. Prefer writing your own code over using someone else’s code / packages
+
+
+### Data
+
+Always save the raw data and document any comment about the data.
+
+Document the commands used for pre-processing the data (i.e cellranger commands).
+
+
+### Code
+
+Variables should have meaningful names (i.e myeloid_differential_expression_results)
+
+Use a balanced approach for code comments (a readable code needs no comments)
+
+Prefer to write R commands using tidyr approach (i.e %>%)
+
+Don’t save an environment, but rather the important analysis objects (i.e expression matrix, metadata file). Save objects generated after a time-consuming process
+
+Use the same name for similar ID fields (i.e Patient_ID) from different data sources in order to easily join data from different sources
+
+Factors are a good method to store categorical data. In addition, it enable us to set the order in which the values will be displayed in the ggplot. Be careful when comparing factors, as the values are stored as numbers, and as.character() is needed to get the string values
+
+Prefer using the apply group of function (i.e, lapply) over for loop
+
+Run time-consuming analysis in a different job, either a Wexac job (https://www.weizmann.ac.il/WIT/wexac-quick-guide) or an RStudio job (found in the bottom-window panel in the RStudio) 
+
+
+### Visualization
+
+ggplot is a great package for plotting, with vast possibilities. Try to use it as much as possible.
+
+patchwork is a good package for placing multiple plots (i.e a heatmap and a panel) next to each other
+
+Stick to the same color palate as you can (i.e, green-shade colors to represent T-cells). It is helpful to gather all color codes in a separate file (*.R) and load at the beginning of each analysis file (*.Rmd)
+
+Create a theme(s) and customize it according to the desired plotting (i.e set base_size)
+
+Save the final plot using ggsave (providing height and weight variables)
+
+tidyr::pivot_longer() / reshape2::melt() are the ways to lengthening the data, usually done before plotting a heatmap from a data.frame data
+
+Add the statistical test results into the plot (i.e ggpubr::stat_pvalue_manual())
+
+
+
+### References:
+https://github.com/UofABioinformaticsHub/BestPractices
+R for Data Science (https://r4ds.hadley.nz/)
+
+
 ## Contributing 
 Members of the lab to whom the shared code is relevant and of use are encouraged to contribute to it. This will both help the code to grow and develop but also allow you to fine-tune it for your own analyses. To make individual contributions, you can [fork the project from GitHub](https://help.github.com/en/github/getting-started-with-github/fork-a-repo). To contribute in a more long-term way, ask Julie or Avishay to add you as an official contributor to the GitHub package(s) in question.
