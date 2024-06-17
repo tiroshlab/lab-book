@@ -1,14 +1,14 @@
 # Lab members and contact details {#contact}
 
-1. Itay Tirosh, tirosh.itay@gmail
-2. Alissa Greenwald, aliscohen@gmail.com
-3. Rony Chanoch, ronychanoch@gmail.com
-4. Mike Tyler, m20tyler@gmail.com
-5. Avishay Spitzer, dr.avishayspitzer@gmail.com (alumni)
-6. Michael Mints, michael.mints@umu.se
-7. Julie Laffy, jlaffy7@gmail.com (alumni)
-8. Noam Hadary, noam.hadary@weizmann.ac.il (alumni)
-9. Noam Galili, noam.galili@weizmann.ac.il
+1. Itay Tirosh, tirosh.itay at gmail
+2. Alissa Greenwald, aliscohen at gmail
+3. Rony Chanoch, ronychanoch at gmail
+4. Mike Tyler, m20tyler at gmail
+5. Avishay Spitzer, dr.avishayspitzer at gmail (alumni)
+6. Michael Mints, michael.mints at umu.se
+7. Julie Laffy, jlaffy7 at gmail (alumni)
+8. Noam Hadary, noam.hadary at weizmann.ac.il (alumni)
+9. Noam Galili, noam.galili at weizmann.ac.il
 10. Dor Simikn
 11. Nisan Feigen
 12. Rouven Hoefflin
